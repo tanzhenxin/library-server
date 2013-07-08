@@ -1,0 +1,19 @@
+/* 
+    Document   : bookDisplay
+    Created on : May 15, 2013, 8:27:35 PM
+    Author     : XuL2
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+#no1{width:100%; margin:0;}
+
+#no2{width:100%; margin:0;}
+#no2-1{width:90px; height:150px;margin:0; padding:10px 30px;float:left}
+
+#no2-2{width:500px;margin:0;float:left}
+#no2-2 ul{float:left;margin:0px;}
+#no2-2 ul li{white-space:nowrap;
+	text-overflow:ellipsis; 
+	overflow: hidden;width:700px;margin-top: 15px;}
+
