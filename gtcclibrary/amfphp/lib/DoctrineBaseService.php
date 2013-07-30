@@ -17,8 +17,8 @@ abstract class DoctrineBaseService {
 
 		$this->doctrinemodel = \Utility\DoctrineConnect::GetInstance(__DIR__ . '/../../cache')->Doctrinemodel;
 		
-		$this->Logger = new \Utility\KLogger ('D:\wamp\logs\gtcclibrary\amfservice.log', 
-			\Utility\GlobalConfiguration::GetInstance()->Config[\Constant\SectionType::Logging][\Constant\ConfigKey::LoggingLevel] );
+//		$this->Logger = new \Utility\KLogger ('D:\wamp\logs\gtcclibrary\amfservice.log', 
+//			\Utility\GlobalConfiguration::GetInstance()->Config[\Constant\SectionType::Logging][\Constant\ConfigKey::LoggingLevel] );
 	}
 	
 	protected function GetVistorIpAddress() {

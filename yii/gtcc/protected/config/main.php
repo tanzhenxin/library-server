@@ -67,8 +67,8 @@ return array(
 		
                 'mongodb' => array(
                 'class'             => 'EMongoDB',
-                'connectionString'  => 'mongodb://127.0.0.1:27017',
-                'dbName'            => 'gtcclibrary',
+                'connectionString'  => 'mongodb://cn-wangxur-2:27017',
+                'dbName'            => 'gtcclibrary_test',
                 'fsyncFlag'         => false,
                 'safeFlag'          => false,
                 'useCursor'         => false,
