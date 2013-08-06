@@ -34,6 +34,30 @@ class ApiController extends Controller
 		}
 	}
 
+	public function actionView()
+	{
+		if (!isset($_GET['id']))
+		{
+			$this->_sendResponse(400, 'Error: parameter <b>id</b> is missing.');
+		}
+
+		switch ($_GET['model']) {
+			case 'book':
+				$model = Book::model()->findByPk(new MongoId($_GET['id']));
+				break;
+			default:
+				$this->_sendResponse(501, sprintf('Error: Mode <b>view</b> is not implemented for model <b>%s</b>',$_GET['model']));
+		}
+		if (is_null($model))
+		{
+			$this->_sendResponse(404, 'No item was found with id ' . $_GET['id']);
+		}
+		else
+		{
+			$this->_sendResponse(200, $this->_getObjectEncoded($_GET['model'], $model->attributes));
+		}
+	}
+
 	private function _sendResponse($status = 200, $body = '', $content_type = 'text/html')
 	{
 		$status_header = 'HTTP/1.1' . $status . ' ' . $this->_getStatusMessage($status);
@@ -139,4 +163,28 @@ class ApiController extends Controller
 		);
 		return isset($codes[$status]) ? $codes[$status] : '';
 	}
+
+	private function _getObjectEncoded($model, $array)
+    {
+        if(isset($_GET['format']))
+            $this->format = $_GET['format'];
+
+        if($this->format=='json')
+        {
+            return CJSON::encode($array);
+        }
+        elseif($this->format=='xml')
+        {
+            $result = '<?xml version="1.0">';
+            $result .= "\n<$model>\n";
+            foreach($array as $key=>$value)
+                $result .= "    <$key>".utf8_encode($value)."</$key>\n"; 
+            $result .= '</'.$model.'>';
+            return $result;
+        }
+        else
+        {
+            return;
+        }
+    } // }}} 
 }

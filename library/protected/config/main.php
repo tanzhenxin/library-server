@@ -47,7 +47,7 @@ return array(
 			'rules' => array(
 				        // REST patterns
                         array('api/index', 'pattern'=>'api/<model:\w+>', 'verb'=>'GET'),
-                        array('api/view', 'pattern'=>'api/<model:\w+>/<id:\d+>', 'verb'=>'GET'),
+                        array('api/view', 'pattern'=>'api/<model:\w+>/<id:\w+>', 'verb'=>'GET'),
                         array('api/update', 'pattern'=>'api/<model:\w+>/<id:\d+>', 'verb'=>'PUT'),  // Update
                         array('api/delete', 'pattern'=>'api/<model:\w+>/<id:\d+>', 'verb'=>'DELETE'),
                         array('api/create', 'pattern'=>'api/<model:\w+>', 'verb'=>'POST'), // Create
