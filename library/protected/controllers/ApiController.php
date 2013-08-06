@@ -58,6 +58,56 @@ class ApiController extends Controller
 		}
 	}
 
+    public function actionCreate()
+    {
+        switch ($_GET['model']) {
+            case 'user': {
+                foreach ($_POST as $key => $value) {
+                    echo "$key: $value\n";
+                }
+                if (!isset($_POST['Username']) || !isset($_POST['Password']) || !isset($_POST['Email'])) {
+                    $this->_sendResponse(400, 'Parameter is not complete. Check if Username, Password and Email are provided');
+                }
+                $username = $_POST['Username'];
+                $model = User::model()->findByAttributes(array('username' => $username));
+                if (!is_null($model)) {
+                    $this->_sendResponse(400);
+                }
+                $model = new User;
+                break;
+            }
+            default:
+                $this->_sendResponse(501, sprintf('Mode <b>create</b> is not implemented for model <b>%s</b>', $_GET['model']));
+                exit;
+        }
+        foreach ($_POST as $key => $value) {
+            if ($model->hasAttribute($key)) {
+                $model->$key = $value;
+            } else {
+                $this->_sendResponse(400, sprintf('Parameter <b>%s</b> is not allowed for model <b>%s</b>', $key, $_GET['model']));
+            }
+        }
+
+        if ($model->save()) {
+            $this->_sendResponse(200, $this->_getObjectEncoded($_GET['model'], $model->attributes));
+        } else {
+                        // Errors occurred
+            $msg = "<h1>Error</h1>";
+            $msg .= sprintf("Couldn't create model <b>%s</b>", $_GET['model']);
+            $msg .= "<ul>";
+            foreach($model->errors as $attribute=>$attr_errors) {
+                $msg .= "<li>Attribute: $attribute</li>";
+                $msg .= "<ul>";
+                foreach($attr_errors as $attr_error) {
+                    $msg .= "<li>$attr_error</li>";
+                }        
+                $msg .= "</ul>";
+            }
+            $msg .= "</ul>";
+            $this->_sendResponse(500, $msg );
+        }        
+    }
+
 	private function _sendResponse($status = 200, $body = '', $content_type = 'text/html')
 	{
 		$status_header = 'HTTP/1.1' . $status . ' ' . $this->_getStatusMessage($status);
@@ -101,10 +151,10 @@ class ApiController extends Controller
                         <html>
                             <head>
                                 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-                                <title>' . $status . ' ' . $this->_getStatusCodeMessage($status) . '</title>
+                                <title>' . $status . ' ' . $this->_getStatusMessage($status) . '</title>
                             </head>
                             <body>
-                                <h1>' . $this->_getStatusCodeMessage($status) . '</h1>
+                                <h1>' . $this->_getStatusMessage($status) . '</h1>
                                 <p>' . $message . '</p>
                                 <hr />
                                 <address>' . $signature . '</address>
