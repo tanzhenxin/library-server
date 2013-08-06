@@ -4,6 +4,7 @@ define('DB_NAME', 'gtcclibrary'); // The name of the database
 define('DB_USER', 'gtcc'); // Your MongoDB username
 define('DB_PASSWORD', 'Welcome1'); // ...and password
 define('DB_HOST', '127.0.0.1'); // 99% chance you won't need to change this value
+define('DB_PORT', '27017');
 
 // ** AMQP settings ** //
 define('AMQP_NAME', '/'); // The name of the virtual host

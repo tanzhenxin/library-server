@@ -1,0 +1,948 @@
+2013/08/06 02:54:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in D:\code\android\GTCClibrary\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\code\android\GTCClibrary\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bookStore/image...')
+#3 D:\code\android\GTCClibrary\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\code\android\GTCClibrary\yii\gtcc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/gtcc/index.php/bookStore/images/9787111283560.jpg
+HTTP_REFERER=http://localhost:8080/yii/gtcc/index.php/bookStore/index
+---
+2013/08/06 02:54:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in D:\code\android\GTCClibrary\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\code\android\GTCClibrary\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bookStore/image...')
+#3 D:\code\android\GTCClibrary\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\code\android\GTCClibrary\yii\gtcc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/gtcc/index.php/bookStore/images/9787538735086.jpg
+HTTP_REFERER=http://localhost:8080/yii/gtcc/index.php/bookStore/index
+---
+2013/08/06 02:54:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in D:\code\android\GTCClibrary\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\code\android\GTCClibrary\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bookStore/image...')
+#3 D:\code\android\GTCClibrary\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\code\android\GTCClibrary\yii\gtcc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/gtcc/index.php/bookStore/images/9780066620367.jpg
+HTTP_REFERER=http://localhost:8080/yii/gtcc/index.php/bookStore/index
+---
+2013/08/06 02:54:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in D:\code\android\GTCClibrary\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\code\android\GTCClibrary\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bookStore/image...')
+#3 D:\code\android\GTCClibrary\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\code\android\GTCClibrary\yii\gtcc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/gtcc/index.php/bookStore/images/9787544253116.jpg
+HTTP_REFERER=http://localhost:8080/yii/gtcc/index.php/bookStore/index
+---
+2013/08/06 02:54:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in D:\code\android\GTCClibrary\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\code\android\GTCClibrary\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bookStore/image...')
+#3 D:\code\android\GTCClibrary\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\code\android\GTCClibrary\yii\gtcc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/gtcc/index.php/bookStore/images/.jpg
+HTTP_REFERER=http://localhost:8080/yii/gtcc/index.php/bookStore/index
+---
+2013/08/06 02:54:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in D:\code\android\GTCClibrary\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\code\android\GTCClibrary\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bookStore/image...')
+#3 D:\code\android\GTCClibrary\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\code\android\GTCClibrary\yii\gtcc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/gtcc/index.php/bookStore/images/9787302155553.jpg
+HTTP_REFERER=http://localhost:8080/yii/gtcc/index.php/bookStore/index
+---
+2013/08/06 02:54:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in D:\code\android\GTCClibrary\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\code\android\GTCClibrary\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bookStore/image...')
+#3 D:\code\android\GTCClibrary\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\code\android\GTCClibrary\yii\gtcc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/gtcc/index.php/bookStore/images/9780066620367.jpg
+HTTP_REFERER=http://localhost:8080/yii/gtcc/index.php/bookStore/index
+---
+2013/08/06 02:54:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in D:\code\android\GTCClibrary\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\code\android\GTCClibrary\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bookStore/image...')
+#3 D:\code\android\GTCClibrary\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\code\android\GTCClibrary\yii\gtcc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/gtcc/index.php/bookStore/images/9787544253116.jpg
+HTTP_REFERER=http://localhost:8080/yii/gtcc/index.php/bookStore/index
+---
+2013/08/06 02:54:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in D:\code\android\GTCClibrary\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\code\android\GTCClibrary\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bookStore/image...')
+#3 D:\code\android\GTCClibrary\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\code\android\GTCClibrary\yii\gtcc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/gtcc/index.php/bookStore/images/9787302155553.jpg
+HTTP_REFERER=http://localhost:8080/yii/gtcc/index.php/bookStore/index
+---
+2013/08/06 02:54:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in D:\code\android\GTCClibrary\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\code\android\GTCClibrary\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bookStore/image...')
+#3 D:\code\android\GTCClibrary\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\code\android\GTCClibrary\yii\gtcc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/gtcc/index.php/bookStore/images/9787111283560.jpg
+HTTP_REFERER=http://localhost:8080/yii/gtcc/index.php/bookStore/index
+---
+2013/08/06 02:54:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in D:\code\android\GTCClibrary\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\code\android\GTCClibrary\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bookStore/image...')
+#3 D:\code\android\GTCClibrary\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\code\android\GTCClibrary\yii\gtcc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/gtcc/index.php/bookStore/images/.jpg
+HTTP_REFERER=http://localhost:8080/yii/gtcc/index.php/bookStore/index
+---
+2013/08/06 02:54:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in D:\code\android\GTCClibrary\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\code\android\GTCClibrary\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bookStore/image...')
+#3 D:\code\android\GTCClibrary\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\code\android\GTCClibrary\yii\gtcc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/gtcc/index.php/bookStore/images/9787538735086.jpg
+HTTP_REFERER=http://localhost:8080/yii/gtcc/index.php/bookStore/index
+---
+2013/08/06 02:54:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in D:\code\android\GTCClibrary\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\code\android\GTCClibrary\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bookStore/image...')
+#3 D:\code\android\GTCClibrary\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\code\android\GTCClibrary\yii\gtcc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/gtcc/index.php/bookStore/images/9787111283560.jpg
+HTTP_REFERER=http://localhost:8080/yii/gtcc/index.php/bookStore/index
+---
+2013/08/06 02:54:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in D:\code\android\GTCClibrary\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\code\android\GTCClibrary\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bookStore/image...')
+#3 D:\code\android\GTCClibrary\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\code\android\GTCClibrary\yii\gtcc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/gtcc/index.php/bookStore/images/9787538735086.jpg
+HTTP_REFERER=http://localhost:8080/yii/gtcc/index.php/bookStore/index
+---
+2013/08/06 02:54:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in D:\code\android\GTCClibrary\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\code\android\GTCClibrary\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bookStore/image...')
+#3 D:\code\android\GTCClibrary\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\code\android\GTCClibrary\yii\gtcc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/gtcc/index.php/bookStore/images/9780066620367.jpg
+HTTP_REFERER=http://localhost:8080/yii/gtcc/index.php/bookStore/index
+---
+2013/08/06 02:54:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in D:\code\android\GTCClibrary\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\code\android\GTCClibrary\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bookStore/image...')
+#3 D:\code\android\GTCClibrary\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\code\android\GTCClibrary\yii\gtcc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/gtcc/index.php/bookStore/images/9787302155553.jpg
+HTTP_REFERER=http://localhost:8080/yii/gtcc/index.php/bookStore/index
+---
+2013/08/06 02:54:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in D:\code\android\GTCClibrary\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\code\android\GTCClibrary\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bookStore/image...')
+#3 D:\code\android\GTCClibrary\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\code\android\GTCClibrary\yii\gtcc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/gtcc/index.php/bookStore/images/9787544253116.jpg
+HTTP_REFERER=http://localhost:8080/yii/gtcc/index.php/bookStore/index
+---
+2013/08/06 02:54:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in D:\code\android\GTCClibrary\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\code\android\GTCClibrary\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bookStore/image...')
+#3 D:\code\android\GTCClibrary\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\code\android\GTCClibrary\yii\gtcc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/gtcc/index.php/bookStore/images/.jpg
+HTTP_REFERER=http://localhost:8080/yii/gtcc/index.php/bookStore/index
+---
+2013/08/06 02:54:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in D:\code\android\GTCClibrary\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\code\android\GTCClibrary\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bookStore/image...')
+#3 D:\code\android\GTCClibrary\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\code\android\GTCClibrary\yii\gtcc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/gtcc/index.php/bookStore/images/9787302155553.jpg
+HTTP_REFERER=http://localhost:8080/yii/gtcc/index.php/bookStore/index
+---
+2013/08/06 02:54:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in D:\code\android\GTCClibrary\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\code\android\GTCClibrary\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bookStore/image...')
+#3 D:\code\android\GTCClibrary\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\code\android\GTCClibrary\yii\gtcc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/gtcc/index.php/bookStore/images/9787544253116.jpg
+HTTP_REFERER=http://localhost:8080/yii/gtcc/index.php/bookStore/index
+---
+2013/08/06 02:54:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in D:\code\android\GTCClibrary\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\code\android\GTCClibrary\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bookStore/image...')
+#3 D:\code\android\GTCClibrary\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\code\android\GTCClibrary\yii\gtcc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/gtcc/index.php/bookStore/images/9780066620367.jpg
+HTTP_REFERER=http://localhost:8080/yii/gtcc/index.php/bookStore/index
+---
+2013/08/06 02:54:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in D:\code\android\GTCClibrary\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\code\android\GTCClibrary\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bookStore/image...')
+#3 D:\code\android\GTCClibrary\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\code\android\GTCClibrary\yii\gtcc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/gtcc/index.php/bookStore/images/9787111283560.jpg
+HTTP_REFERER=http://localhost:8080/yii/gtcc/index.php/bookStore/index
+---
+2013/08/06 02:54:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in D:\code\android\GTCClibrary\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\code\android\GTCClibrary\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bookStore/image...')
+#3 D:\code\android\GTCClibrary\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\code\android\GTCClibrary\yii\gtcc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/gtcc/index.php/bookStore/images/.jpg
+HTTP_REFERER=http://localhost:8080/yii/gtcc/index.php/bookStore/index
+---
+2013/08/06 02:54:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in D:\code\android\GTCClibrary\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\code\android\GTCClibrary\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bookStore/image...')
+#3 D:\code\android\GTCClibrary\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\code\android\GTCClibrary\yii\gtcc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/gtcc/index.php/bookStore/images/9787538735086.jpg
+HTTP_REFERER=http://localhost:8080/yii/gtcc/index.php/bookStore/index
+---
+2013/08/06 03:11:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in D:\code\android\GTCClibrary\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\code\android\GTCClibrary\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bookStore/image...')
+#3 D:\code\android\GTCClibrary\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\code\android\GTCClibrary\library\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/library/index.php/bookStore/images/9780066620367.jpg
+HTTP_REFERER=http://localhost:8080/library/index.php/bookStore/index
+---
+2013/08/06 03:11:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in D:\code\android\GTCClibrary\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\code\android\GTCClibrary\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bookStore/image...')
+#3 D:\code\android\GTCClibrary\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\code\android\GTCClibrary\library\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/library/index.php/bookStore/images/9787538735086.jpg
+HTTP_REFERER=http://localhost:8080/library/index.php/bookStore/index
+---
+2013/08/06 03:11:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in D:\code\android\GTCClibrary\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\code\android\GTCClibrary\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bookStore/image...')
+#3 D:\code\android\GTCClibrary\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\code\android\GTCClibrary\library\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/library/index.php/bookStore/images/9787111283560.jpg
+HTTP_REFERER=http://localhost:8080/library/index.php/bookStore/index
+---
+2013/08/06 03:11:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in D:\code\android\GTCClibrary\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\code\android\GTCClibrary\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bookStore/image...')
+#3 D:\code\android\GTCClibrary\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\code\android\GTCClibrary\library\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/library/index.php/bookStore/images/9787302155553.jpg
+HTTP_REFERER=http://localhost:8080/library/index.php/bookStore/index
+---
+2013/08/06 03:11:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in D:\code\android\GTCClibrary\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\code\android\GTCClibrary\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bookStore/image...')
+#3 D:\code\android\GTCClibrary\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\code\android\GTCClibrary\library\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/library/index.php/bookStore/images/9787544253116.jpg
+HTTP_REFERER=http://localhost:8080/library/index.php/bookStore/index
+---
+2013/08/06 03:11:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in D:\code\android\GTCClibrary\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\code\android\GTCClibrary\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bookStore/image...')
+#3 D:\code\android\GTCClibrary\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\code\android\GTCClibrary\library\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/library/index.php/bookStore/images/.jpg
+HTTP_REFERER=http://localhost:8080/library/index.php/bookStore/index
+---
+2013/08/06 03:16:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in D:\code\android\GTCClibrary\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\code\android\GTCClibrary\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bookStore/image...')
+#3 D:\code\android\GTCClibrary\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\code\android\GTCClibrary\library\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/library/index.php/bookStore/images/9787111283560.jpg
+HTTP_REFERER=http://localhost:8080/library/index.php/bookStore/index
+---
+2013/08/06 03:16:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in D:\code\android\GTCClibrary\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\code\android\GTCClibrary\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bookStore/image...')
+#3 D:\code\android\GTCClibrary\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\code\android\GTCClibrary\library\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/library/index.php/bookStore/images/.jpg
+HTTP_REFERER=http://localhost:8080/library/index.php/bookStore/index
+---
+2013/08/06 03:16:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in D:\code\android\GTCClibrary\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\code\android\GTCClibrary\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bookStore/image...')
+#3 D:\code\android\GTCClibrary\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\code\android\GTCClibrary\library\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/library/index.php/bookStore/images/9780066620367.jpg
+HTTP_REFERER=http://localhost:8080/library/index.php/bookStore/index
+---
+2013/08/06 03:16:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in D:\code\android\GTCClibrary\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\code\android\GTCClibrary\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bookStore/image...')
+#3 D:\code\android\GTCClibrary\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\code\android\GTCClibrary\library\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/library/index.php/bookStore/images/9787544253116.jpg
+HTTP_REFERER=http://localhost:8080/library/index.php/bookStore/index
+---
+2013/08/06 03:16:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in D:\code\android\GTCClibrary\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\code\android\GTCClibrary\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bookStore/image...')
+#3 D:\code\android\GTCClibrary\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\code\android\GTCClibrary\library\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/library/index.php/bookStore/images/9787302155553.jpg
+HTTP_REFERER=http://localhost:8080/library/index.php/bookStore/index
+---
+2013/08/06 03:16:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in D:\code\android\GTCClibrary\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\code\android\GTCClibrary\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bookStore/image...')
+#3 D:\code\android\GTCClibrary\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\code\android\GTCClibrary\library\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/library/index.php/bookStore/images/9787538735086.jpg
+HTTP_REFERER=http://localhost:8080/library/index.php/bookStore/index
+---
+2013/08/06 03:17:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in D:\code\android\GTCClibrary\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\code\android\GTCClibrary\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bookStore/image...')
+#3 D:\code\android\GTCClibrary\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\code\android\GTCClibrary\library\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/library/index.php/bookStore/images/.jpg
+HTTP_REFERER=http://localhost:8080/library/index.php/bookStore/index
+---
+2013/08/06 03:17:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in D:\code\android\GTCClibrary\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\code\android\GTCClibrary\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bookStore/image...')
+#3 D:\code\android\GTCClibrary\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\code\android\GTCClibrary\library\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/library/index.php/bookStore/images/9780066620367.jpg
+HTTP_REFERER=http://localhost:8080/library/index.php/bookStore/index
+---
+2013/08/06 03:17:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in D:\code\android\GTCClibrary\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\code\android\GTCClibrary\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bookStore/image...')
+#3 D:\code\android\GTCClibrary\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\code\android\GTCClibrary\library\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/library/index.php/bookStore/images/9787111283560.jpg
+HTTP_REFERER=http://localhost:8080/library/index.php/bookStore/index
+---
+2013/08/06 03:17:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in D:\code\android\GTCClibrary\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\code\android\GTCClibrary\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bookStore/image...')
+#3 D:\code\android\GTCClibrary\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\code\android\GTCClibrary\library\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/library/index.php/bookStore/images/9787544253116.jpg
+HTTP_REFERER=http://localhost:8080/library/index.php/bookStore/index
+---
+2013/08/06 03:17:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in D:\code\android\GTCClibrary\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\code\android\GTCClibrary\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bookStore/image...')
+#3 D:\code\android\GTCClibrary\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\code\android\GTCClibrary\library\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/library/index.php/bookStore/images/9787302155553.jpg
+HTTP_REFERER=http://localhost:8080/library/index.php/bookStore/index
+---
+2013/08/06 03:17:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in D:\code\android\GTCClibrary\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\code\android\GTCClibrary\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bookStore/image...')
+#3 D:\code\android\GTCClibrary\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\code\android\GTCClibrary\library\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/library/index.php/bookStore/images/9787538735086.jpg
+HTTP_REFERER=http://localhost:8080/library/index.php/bookStore/index
+---
+2013/08/06 03:17:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in D:\code\android\GTCClibrary\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\code\android\GTCClibrary\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bookStore/image...')
+#3 D:\code\android\GTCClibrary\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\code\android\GTCClibrary\library\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/library/index.php/bookStore/images/9787538735086.jpg
+HTTP_REFERER=http://localhost:8080/library/index.php/bookStore/index
+---
+2013/08/06 03:17:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in D:\code\android\GTCClibrary\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\code\android\GTCClibrary\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bookStore/image...')
+#3 D:\code\android\GTCClibrary\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\code\android\GTCClibrary\library\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/library/index.php/bookStore/images/9787111283560.jpg
+HTTP_REFERER=http://localhost:8080/library/index.php/bookStore/index
+---
+2013/08/06 03:17:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in D:\code\android\GTCClibrary\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\code\android\GTCClibrary\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bookStore/image...')
+#3 D:\code\android\GTCClibrary\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\code\android\GTCClibrary\library\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/library/index.php/bookStore/images/9787544253116.jpg
+HTTP_REFERER=http://localhost:8080/library/index.php/bookStore/index
+---
+2013/08/06 03:17:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in D:\code\android\GTCClibrary\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\code\android\GTCClibrary\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bookStore/image...')
+#3 D:\code\android\GTCClibrary\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\code\android\GTCClibrary\library\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/library/index.php/bookStore/images/9780066620367.jpg
+HTTP_REFERER=http://localhost:8080/library/index.php/bookStore/index
+---
+2013/08/06 03:17:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in D:\code\android\GTCClibrary\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\code\android\GTCClibrary\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bookStore/image...')
+#3 D:\code\android\GTCClibrary\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\code\android\GTCClibrary\library\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/library/index.php/bookStore/images/.jpg
+HTTP_REFERER=http://localhost:8080/library/index.php/bookStore/index
+---
+2013/08/06 03:17:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in D:\code\android\GTCClibrary\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\code\android\GTCClibrary\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bookStore/image...')
+#3 D:\code\android\GTCClibrary\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\code\android\GTCClibrary\library\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/library/index.php/bookStore/images/9787302155553.jpg
+HTTP_REFERER=http://localhost:8080/library/index.php/bookStore/index
+---
+2013/08/06 03:17:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in D:\code\android\GTCClibrary\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\code\android\GTCClibrary\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bookStore/image...')
+#3 D:\code\android\GTCClibrary\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\code\android\GTCClibrary\library\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/library/index.php/bookStore/images/9787538735086.jpg
+HTTP_REFERER=http://localhost:8080/library/index.php/bookStore/index
+---
+2013/08/06 03:17:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in D:\code\android\GTCClibrary\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\code\android\GTCClibrary\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bookStore/image...')
+#3 D:\code\android\GTCClibrary\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\code\android\GTCClibrary\library\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/library/index.php/bookStore/images/9787111283560.jpg
+HTTP_REFERER=http://localhost:8080/library/index.php/bookStore/index
+---
+2013/08/06 03:17:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in D:\code\android\GTCClibrary\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\code\android\GTCClibrary\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bookStore/image...')
+#3 D:\code\android\GTCClibrary\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\code\android\GTCClibrary\library\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/library/index.php/bookStore/images/9780066620367.jpg
+HTTP_REFERER=http://localhost:8080/library/index.php/bookStore/index
+---
+2013/08/06 03:17:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in D:\code\android\GTCClibrary\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\code\android\GTCClibrary\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bookStore/image...')
+#3 D:\code\android\GTCClibrary\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\code\android\GTCClibrary\library\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/library/index.php/bookStore/images/.jpg
+HTTP_REFERER=http://localhost:8080/library/index.php/bookStore/index
+---
+2013/08/06 03:17:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in D:\code\android\GTCClibrary\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\code\android\GTCClibrary\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bookStore/image...')
+#3 D:\code\android\GTCClibrary\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\code\android\GTCClibrary\library\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/library/index.php/bookStore/images/9787302155553.jpg
+HTTP_REFERER=http://localhost:8080/library/index.php/bookStore/index
+---
+2013/08/06 03:17:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in D:\code\android\GTCClibrary\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\code\android\GTCClibrary\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bookStore/image...')
+#3 D:\code\android\GTCClibrary\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\code\android\GTCClibrary\library\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/library/index.php/bookStore/images/9787544253116.jpg
+HTTP_REFERER=http://localhost:8080/library/index.php/bookStore/index
+---
+2013/08/06 03:17:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in D:\code\android\GTCClibrary\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\code\android\GTCClibrary\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bookStore/image...')
+#3 D:\code\android\GTCClibrary\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\code\android\GTCClibrary\library\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/library/index.php/bookStore/images/9787302155553.jpg
+HTTP_REFERER=http://localhost:8080/library/index.php/bookStore/index
+---
+2013/08/06 03:17:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in D:\code\android\GTCClibrary\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\code\android\GTCClibrary\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bookStore/image...')
+#3 D:\code\android\GTCClibrary\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\code\android\GTCClibrary\library\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/library/index.php/bookStore/images/9787111283560.jpg
+HTTP_REFERER=http://localhost:8080/library/index.php/bookStore/index
+---
+2013/08/06 03:17:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in D:\code\android\GTCClibrary\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\code\android\GTCClibrary\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bookStore/image...')
+#3 D:\code\android\GTCClibrary\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\code\android\GTCClibrary\library\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/library/index.php/bookStore/images/9787544253116.jpg
+HTTP_REFERER=http://localhost:8080/library/index.php/bookStore/index
+---
+2013/08/06 03:17:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in D:\code\android\GTCClibrary\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\code\android\GTCClibrary\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bookStore/image...')
+#3 D:\code\android\GTCClibrary\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\code\android\GTCClibrary\library\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/library/index.php/bookStore/images/9787538735086.jpg
+HTTP_REFERER=http://localhost:8080/library/index.php/bookStore/index
+---
+2013/08/06 03:17:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in D:\code\android\GTCClibrary\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\code\android\GTCClibrary\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bookStore/image...')
+#3 D:\code\android\GTCClibrary\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\code\android\GTCClibrary\library\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/library/index.php/bookStore/images/9780066620367.jpg
+HTTP_REFERER=http://localhost:8080/library/index.php/bookStore/index
+---
+2013/08/06 03:17:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in D:\code\android\GTCClibrary\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\code\android\GTCClibrary\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bookStore/image...')
+#3 D:\code\android\GTCClibrary\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\code\android\GTCClibrary\library\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/library/index.php/bookStore/images/.jpg
+HTTP_REFERER=http://localhost:8080/library/index.php/bookStore/index
+---
+2013/08/06 03:18:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in D:\code\android\GTCClibrary\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\code\android\GTCClibrary\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bookStore/image...')
+#3 D:\code\android\GTCClibrary\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\code\android\GTCClibrary\library\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/library/index.php/bookStore/images/.jpg
+HTTP_REFERER=http://localhost:8080/library/index.php/bookStore/index
+---
+2013/08/06 03:18:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in D:\code\android\GTCClibrary\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\code\android\GTCClibrary\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bookStore/image...')
+#3 D:\code\android\GTCClibrary\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\code\android\GTCClibrary\library\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/library/index.php/bookStore/images/9787111283560.jpg
+HTTP_REFERER=http://localhost:8080/library/index.php/bookStore/index
+---
+2013/08/06 03:18:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in D:\code\android\GTCClibrary\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\code\android\GTCClibrary\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bookStore/image...')
+#3 D:\code\android\GTCClibrary\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\code\android\GTCClibrary\library\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/library/index.php/bookStore/images/9787538735086.jpg
+HTTP_REFERER=http://localhost:8080/library/index.php/bookStore/index
+---
+2013/08/06 03:18:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in D:\code\android\GTCClibrary\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\code\android\GTCClibrary\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bookStore/image...')
+#3 D:\code\android\GTCClibrary\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\code\android\GTCClibrary\library\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/library/index.php/bookStore/images/9780066620367.jpg
+HTTP_REFERER=http://localhost:8080/library/index.php/bookStore/index
+---
+2013/08/06 03:18:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in D:\code\android\GTCClibrary\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\code\android\GTCClibrary\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bookStore/image...')
+#3 D:\code\android\GTCClibrary\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\code\android\GTCClibrary\library\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/library/index.php/bookStore/images/9787544253116.jpg
+HTTP_REFERER=http://localhost:8080/library/index.php/bookStore/index
+---
+2013/08/06 03:18:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in D:\code\android\GTCClibrary\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\code\android\GTCClibrary\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bookStore/image...')
+#3 D:\code\android\GTCClibrary\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\code\android\GTCClibrary\library\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/library/index.php/bookStore/images/9787302155553.jpg
+HTTP_REFERER=http://localhost:8080/library/index.php/bookStore/index
+---
+2013/08/06 03:19:43 [error] [exception.CException] exception 'CException' with message 'Property "CUrlManager.<controller:\w+>/<action:\w+>" is not defined.' in D:\code\android\GTCClibrary\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 D:\code\android\GTCClibrary\yii\framework\YiiBase.php(220): CComponent->__set('<controller:\w+...', '<controller>/<a...')
+#1 D:\code\android\GTCClibrary\yii\framework\base\CModule.php(386): YiiBase::createComponent(Array)
+#2 D:\code\android\GTCClibrary\yii\framework\base\CApplication.php(510): CModule->getComponent('urlManager')
+#3 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(140): CApplication->getUrlManager()
+#4 D:\code\android\GTCClibrary\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 D:\code\android\GTCClibrary\library\index.php(13): CApplication->run()
+#6 {main}
+REQUEST_URI=/library/
+---
+2013/08/06 03:19:47 [error] [exception.CException] exception 'CException' with message 'Property "CUrlManager.<controller:\w+>/<action:\w+>" is not defined.' in D:\code\android\GTCClibrary\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 D:\code\android\GTCClibrary\yii\framework\YiiBase.php(220): CComponent->__set('<controller:\w+...', '<controller>/<a...')
+#1 D:\code\android\GTCClibrary\yii\framework\base\CModule.php(386): YiiBase::createComponent(Array)
+#2 D:\code\android\GTCClibrary\yii\framework\base\CApplication.php(510): CModule->getComponent('urlManager')
+#3 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(140): CApplication->getUrlManager()
+#4 D:\code\android\GTCClibrary\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 D:\code\android\GTCClibrary\library\index.php(13): CApplication->run()
+#6 {main}
+REQUEST_URI=/library/
+---
+2013/08/06 03:20:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in D:\code\android\GTCClibrary\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\code\android\GTCClibrary\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bookStore/image...')
+#3 D:\code\android\GTCClibrary\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\code\android\GTCClibrary\library\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/library/index.php/bookStore/images/9787111283560.jpg
+HTTP_REFERER=http://localhost:8080/library/index.php/bookStore/index
+---
+2013/08/06 03:20:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in D:\code\android\GTCClibrary\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\code\android\GTCClibrary\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bookStore/image...')
+#3 D:\code\android\GTCClibrary\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\code\android\GTCClibrary\library\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/library/index.php/bookStore/images/9787538735086.jpg
+HTTP_REFERER=http://localhost:8080/library/index.php/bookStore/index
+---
+2013/08/06 03:20:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in D:\code\android\GTCClibrary\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\code\android\GTCClibrary\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bookStore/image...')
+#3 D:\code\android\GTCClibrary\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\code\android\GTCClibrary\library\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/library/index.php/bookStore/images/9780066620367.jpg
+HTTP_REFERER=http://localhost:8080/library/index.php/bookStore/index
+---
+2013/08/06 03:20:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in D:\code\android\GTCClibrary\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\code\android\GTCClibrary\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bookStore/image...')
+#3 D:\code\android\GTCClibrary\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\code\android\GTCClibrary\library\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/library/index.php/bookStore/images/9787544253116.jpg
+HTTP_REFERER=http://localhost:8080/library/index.php/bookStore/index
+---
+2013/08/06 03:20:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in D:\code\android\GTCClibrary\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\code\android\GTCClibrary\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bookStore/image...')
+#3 D:\code\android\GTCClibrary\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\code\android\GTCClibrary\library\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/library/index.php/bookStore/images/9787302155553.jpg
+HTTP_REFERER=http://localhost:8080/library/index.php/bookStore/index
+---
+2013/08/06 03:20:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in D:\code\android\GTCClibrary\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\code\android\GTCClibrary\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bookStore/image...')
+#3 D:\code\android\GTCClibrary\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\code\android\GTCClibrary\library\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/library/index.php/bookStore/images/.jpg
+HTTP_REFERER=http://localhost:8080/library/index.php/bookStore/index
+---
+2013/08/06 05:52:08 [error] [exception.CException] exception 'CException' with message 'Property "CUrlManager.rule" is not defined.' in D:\code\android\GTCClibrary\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 D:\code\android\GTCClibrary\yii\framework\YiiBase.php(220): CComponent->__set('rule', Array)
+#1 D:\code\android\GTCClibrary\yii\framework\base\CModule.php(386): YiiBase::createComponent(Array)
+#2 D:\code\android\GTCClibrary\yii\framework\base\CApplication.php(510): CModule->getComponent('urlManager')
+#3 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(140): CApplication->getUrlManager()
+#4 D:\code\android\GTCClibrary\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 D:\code\android\GTCClibrary\library\index.php(13): CApplication->run()
+#6 {main}
+REQUEST_URI=/library/library/index.php?debug_host=129.223.252.139%2C192.168.56.1%2C127.0.0.1&debug_fastfile=1&start_debug=1&debug_port=10137&use_remote=1&original_url=http%3A%2F%2Flocalhost%3A8080%2Flibrary%2Flibrary%2Findex.php&send_sess_end=1&debug_stop=1&debug_start_session=1&debug_no_cache=1375768328177&debug_session_id=1001
+---
+2013/08/06 05:52:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "library/index.php".' in D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('library/index.p...')
+#1 D:\code\android\GTCClibrary\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\code\android\GTCClibrary\library\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/library/library/index.php?debug_host=129.223.252.139%2C192.168.56.1%2C127.0.0.1&debug_fastfile=1&start_debug=1&debug_port=10137&use_remote=1&original_url=http%3A%2F%2Flocalhost%3A8080%2Flibrary%2Flibrary%2Findex.php&send_sess_end=1&debug_stop=1&debug_start_session=1&debug_no_cache=1375768328177&debug_session_id=1001
+---
+2013/08/06 05:52:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "library/index.php".' in D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('library/index.p...')
+#1 D:\code\android\GTCClibrary\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\code\android\GTCClibrary\library\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/library/library/index.php?debug_host=129.223.252.139%2C192.168.56.1%2C127.0.0.1&debug_fastfile=1&start_debug=1&debug_port=10137&use_remote=1&original_url=http%3A%2F%2Flocalhost%3A8080%2Flibrary%2Flibrary%2Findex.php&send_sess_end=1&debug_stop=1&debug_start_session=1&debug_no_cache=1375768375724&debug_session_id=1002
+---
+2013/08/06 05:56:04 [error] [exception.CException] exception 'CException' with message 'Property "CUrlManager.rule" is not defined.' in D:\code\android\GTCClibrary\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 D:\code\android\GTCClibrary\yii\framework\YiiBase.php(220): CComponent->__set('rule', Array)
+#1 D:\code\android\GTCClibrary\yii\framework\base\CModule.php(386): YiiBase::createComponent(Array)
+#2 D:\code\android\GTCClibrary\yii\framework\base\CApplication.php(510): CModule->getComponent('urlManager')
+#3 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(140): CApplication->getUrlManager()
+#4 D:\code\android\GTCClibrary\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 D:\code\android\GTCClibrary\library\index.php(13): CApplication->run()
+#6 {main}
+REQUEST_URI=/library/
+---
+2013/08/06 06:01:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in D:\code\android\GTCClibrary\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\code\android\GTCClibrary\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bookStore/image...')
+#3 D:\code\android\GTCClibrary\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\code\android\GTCClibrary\library\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/library/index.php/bookStore/images/9787302155553.jpg
+HTTP_REFERER=http://localhost:8080/library/index.php/bookStore/index
+---
+2013/08/06 06:01:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in D:\code\android\GTCClibrary\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\code\android\GTCClibrary\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bookStore/image...')
+#3 D:\code\android\GTCClibrary\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\code\android\GTCClibrary\library\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/library/index.php/bookStore/images/9787544253116.jpg
+HTTP_REFERER=http://localhost:8080/library/index.php/bookStore/index
+---
+2013/08/06 06:01:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in D:\code\android\GTCClibrary\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\code\android\GTCClibrary\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bookStore/image...')
+#3 D:\code\android\GTCClibrary\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\code\android\GTCClibrary\library\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/library/index.php/bookStore/images/9787111283560.jpg
+HTTP_REFERER=http://localhost:8080/library/index.php/bookStore/index
+---
+2013/08/06 06:01:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in D:\code\android\GTCClibrary\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\code\android\GTCClibrary\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bookStore/image...')
+#3 D:\code\android\GTCClibrary\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\code\android\GTCClibrary\library\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/library/index.php/bookStore/images/9780066620367.jpg
+HTTP_REFERER=http://localhost:8080/library/index.php/bookStore/index
+---
+2013/08/06 06:01:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in D:\code\android\GTCClibrary\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\code\android\GTCClibrary\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bookStore/image...')
+#3 D:\code\android\GTCClibrary\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\code\android\GTCClibrary\library\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/library/index.php/bookStore/images/.jpg
+HTTP_REFERER=http://localhost:8080/library/index.php/bookStore/index
+---
+2013/08/06 06:01:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in D:\code\android\GTCClibrary\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\code\android\GTCClibrary\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bookStore/image...')
+#3 D:\code\android\GTCClibrary\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\code\android\GTCClibrary\library\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/library/index.php/bookStore/images/9787538735086.jpg
+HTTP_REFERER=http://localhost:8080/library/index.php/bookStore/index
+---
+2013/08/06 06:03:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/list".' in D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/list')
+#1 D:\code\android\GTCClibrary\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\code\android\GTCClibrary\library\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/library/api/books
+---
+2013/08/06 07:19:58 [error] [php] Use of undefined constant models - assumed 'models' (D:\code\android\GTCClibrary\library\protected\controllers\ApiController.php:22)
+Stack trace:
+#0 D:\code\android\GTCClibrary\yii\framework\web\CController.php(286): ApiController->runAction()
+#1 D:\code\android\GTCClibrary\yii\framework\web\CController.php(265): ApiController->runActionWithFilters()
+#2 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(282): ApiController->run()
+#3 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\code\android\GTCClibrary\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 D:\code\android\GTCClibrary\library\index.php(13): CWebApplication->run()
+REQUEST_URI=/library/api/books
+in D:\code\android\GTCClibrary\library\protected\controllers\ApiController.php (22)
+in D:\code\android\GTCClibrary\library\index.php (13)
+2013/08/06 07:20:10 [error] [php] Undefined variable: rows (D:\code\android\GTCClibrary\library\protected\controllers\ApiController.php:33)
+Stack trace:
+#0 D:\code\android\GTCClibrary\yii\framework\web\CController.php(286): ApiController->runAction()
+#1 D:\code\android\GTCClibrary\yii\framework\web\CController.php(265): ApiController->runActionWithFilters()
+#2 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(282): ApiController->run()
+#3 D:\code\android\GTCClibrary\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\code\android\GTCClibrary\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 D:\code\android\GTCClibrary\library\index.php(13): CWebApplication->run()
+REQUEST_URI=/library/api/books
+in D:\code\android\GTCClibrary\library\protected\controllers\ApiController.php (33)
+in D:\code\android\GTCClibrary\library\index.php (13)
