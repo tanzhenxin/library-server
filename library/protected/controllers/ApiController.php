@@ -58,9 +58,41 @@ class ApiController extends Controller
 		}
 	}
 
+    public function actionRegister()
+    {
+        if (!isset($_POST['User']) || !isset($_POST['Password']) || !isset($_POST['Email']))
+        {
+            $this->_sendResponse(400, "Parameter is not complete. Check if user, email and password contain value.");
+        }
+
+        $user = $_POST['User'];
+        $email = $_POST['Email'];
+        $password = $_POST['Password'];
+
+        $model = User::model()->findByAttributes(array('username' => $user));
+        if (!is_null($model)) {
+            $this->_sendResponse(400, CJSON::encode(array('Exists' => $user)));
+        }
+        $model = User::model()->findByAttributes(array('email' => $email));
+        if (!is_null($model)) {
+            $this->_sendResponse(400, CJSON::encode(array('Exists' => $email)));
+        }
+
+        $model = new User;
+        $model->username = $user;
+        $model->email = $email;
+        $model->pwd = $password;
+
+        if ($model->save()) {
+            $this->_sendResponse(200, CJSON::encode($model->attributes));
+        } else {
+            $this->_sendResponse(500, sprintf("Error: failed to create user with name <b>%s</b> and email <b>%s</b>"), $user, $password);
+        }
+    }
+
 	private function _sendResponse($status = 200, $body = '', $content_type = 'text/html')
 	{
-		$status_header = 'HTTP/1.1' . $status . ' ' . $this->_getStatusMessage($status);
+		$status_header = 'HTTP/1.1 ' . $status . ' ' . $this->_getStatusMessage($status);
 		header($status_header);
 		header('Content_type: ' . $content_type);
 

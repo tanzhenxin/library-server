@@ -13,13 +13,28 @@ class BookService extends DoctrineBaseService {
 	 /* Get All the books in the Library
 	 * @return BookResponse
 	 */
-	function GetAllBooks() {
+	function GetAllBooks($offset, $count) {
 		
 		$response = new Json\Commands\BookResponse();
 		
 		try {
-			$allBooks = $this->doctrinemodel->createQueryBuilder('Models\Book')->getQuery()->execute()->toArray();
-						
+			if ($offset != null && $count != null)
+			{
+				$allBooks = $this->doctrinemodel->createQueryBuilder('Models\Book')
+				->skip($offset)
+				->limit($count)
+				->getQuery()
+				->execute()
+				->toArray();
+			}
+			else 
+			{
+				$allBooks = $this->doctrinemodel->createQueryBuilder('Models\Book')
+				->getQuery()
+				->execute()
+				->toArray();
+			}
+			
 			if ($allBooks != NULL) {
 				$response->_returnCode = ErrorCode::OK;
 				
@@ -196,6 +211,98 @@ class BookService extends DoctrineBaseService {
 	
 		return $response;
 	
+	}
+	
+	function GetBookByBianHao($bianhao)
+	{
+		$response = new BookResponse();
+		
+		try {
+			$result = $this->doctrinemodel->getRepository ( 'Models\Book' )->findOneBy ( array ('BianHao' => $bianhao ) );
+			if($result == NULL)
+			{
+				$response->_returnCode = ErrorCode::NoSuchBook;
+			}
+			else
+			{
+				$response->book = new CBook($result);
+				$response->_returnCode = ErrorCode::OK;
+			}
+		}
+		catch ( Exception $e ) {
+			$response->_returnCode = ErrorCode::Failed;
+			$response->_returnMessage = $e->__toString ();
+		}
+		
+		return $response;
+	}
+	
+	function GetBookByISBN($ISBN)
+	{
+		$response = new BookResponse();
+		
+		try {
+			$result = $this->doctrinemodel->getRepository ( 'Models\Book' )->findOneBy ( array ('ISBN' => $ISBN.'' ) );
+			if($result == NULL)
+			{
+				$response->_returnCode = ErrorCode::NoSuchBook;
+			}
+			else
+			{
+				$response->book = new CBook($result);
+				$response->_returnCode = ErrorCode::OK;
+			}
+		}
+		catch ( Exception $e ) {
+			$response->_returnCode = ErrorCode::Failed;
+			$response->_returnMessage = $e->__toString ();
+		}
+		
+		return $response;
+	}
+	
+	function GetAllBooksInList($offset, $count) {
+		
+		$response = new Json\Commands\BookResponse();
+		
+		try {
+			if ($offset != null && $count != null)
+			{
+				$allBooks = $this->doctrinemodel->createQueryBuilder('Models\Book')
+				->select('title', 'BianHao', 'ISBN')
+				->skip($offset)
+				->limit($count)
+				->getQuery()
+				->execute()
+				->toArray();
+			}
+			else 
+			{
+				$allBooks = $this->doctrinemodel->createQueryBuilder('Models\Book')
+				->select('title', 'BianHao', 'ISBN')
+				->getQuery()
+				->execute()
+				->toArray();
+			}
+			
+			if ($allBooks != NULL) {
+				$response->_returnCode = ErrorCode::OK;
+				
+				$response->Books = array();
+				
+				foreach ($allBooks as $book) {
+					array_push($response->Books, new CBook($book));
+				}
+			}	
+			else {
+				$response->_returnCode = ErrorCode::CannotGetBookList; 
+			}
+		
+		} catch ( Exception $e ) {
+			$response->_returnCode = ErrorCode::Failed;
+			$response->_returnMessage = $e->getMessage ();
+		}
+		return $response;
 	}
 }
 ?>	

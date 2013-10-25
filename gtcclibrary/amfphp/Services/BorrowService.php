@@ -119,15 +119,25 @@ class BorrowService extends DoctrineBaseService {
 		try {
 			$book = $this->doctrinemodel->getRepository ( 'Models\Book' )->findOneBy ( array ('BianHao' => $bookBianhao) );
 			
-			$result = $this->doctrinemodel->getRepository ( 'Models\BorrowHistory' )
-			->findOneBy ( array ('book.$id' => new \MongoId($book->getId()),'realReturnDate' => '-1') );
-			if($result != NULL)
+			if ($book != NULL)
 			{
-				$response->_returnCode = ErrorCode::OK;
-			}else
+				$result = $this->doctrinemodel->getRepository ( 'Models\BorrowHistory' )
+				->findOneBy ( array ('book.$id' => new \MongoId($book->getId()),'realReturnDate' => '-1') );
+				if($result != NULL)
+				{
+					$response->borrowHistory = new CBorrowHistory($result);
+					$response->_returnCode = ErrorCode::OK;
+				}
+				else
+				{
+					$response->_returnCode = ErrorCode::NoSuchHistory;
+				}
+			}
+			else 
 			{
-				$response->_returnCode = ErrorCode::NoSuchHistory;
-			}				
+				$response->_returnCode = ErrorCode::Failed;
+				$response->_returnCode = ErrorCode::NoSuchBook;
+			}
 		}
 		catch ( Exception $e ) {
 			$response->_returnCode = ErrorCode::Failed;
@@ -146,12 +156,14 @@ class BorrowService extends DoctrineBaseService {
 			$user = $this->doctrinemodel->getRepository ( 'Models\User' )->findOneBy ( array ('username' => $username ) );
 			
 			$result = $this->doctrinemodel->getRepository ( 'Models\BorrowHistory' )
-			->findOneBy ( array ('user.$id' => new \MongoId($user->getId()),'realReturnDate' => '-1') );
+			->findBy ( array ('user.$id' => new \MongoId($user->getId()),'realReturnDate' => '-1') );
 			if($result != NULL)
 			{
 				$response->_returnCode = ErrorCode::OK;
 				$response->borrowInfo = array();
-				array_push($response->borrowInfo, new CBorrowHistory($result));
+				foreach ($result as $borrowHistory) {
+					array_push($response->borrowInfo, new CBorrowHistory($borrowHistory));
+				}
 			}else
 			{
 				$response->_returnCode = ErrorCode::NoBookInBorrow;

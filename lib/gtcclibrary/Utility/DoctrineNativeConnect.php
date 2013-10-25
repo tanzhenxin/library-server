@@ -20,7 +20,7 @@ class DoctrineNativeConnect
 	
 	public function __construct()
 	{
-		$this->mongo = new \Mongo("mongodb://" . DB_HOST . ":" . DB_PORT);
+		$this->mongo = new \Mongo("mongodb://" . DB_USER . ':' . DB_PASSWORD . '@' . DB_HOST);
 		$this->mongodb = $this->mongo->selectDB(DB_NAME);
 	}
 	
