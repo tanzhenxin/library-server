@@ -50,9 +50,9 @@ return array(
                         array('api/login', 'pattern'=>'api/login', 'verb'=>'POST'),
                         array('api/index', 'pattern'=>'api/<model:\w+>', 'verb'=>'GET'),
                         array('api/view', 'pattern'=>'api/<model:\w+>/<id:\w+>', 'verb'=>'GET'),
-                        array('api/update', 'pattern'=>'api/<model:\w+>/<id:\d+>', 'verb'=>'PUT'),  
-                        array('api/delete', 'pattern'=>'api/<model:\w+>/<id:\d+>', 'verb'=>'DELETE'),
-                        array('api/create', 'pattern'=>'api/<model:\w+>', 'verb'=>'POST'), 
+                        array('api/update', 'pattern'=>'api/<model:\w+>/<id:\w+>', 'verb'=>'PUT'),  // Update
+                        array('api/delete', 'pattern'=>'api/<model:\w+>/<id:\w+>', 'verb'=>'DELETE'),
+                        array('api/create', 'pattern'=>'api/<model:\w+>', 'verb'=>'POST'), // Create
 			),
 		),
 		
@@ -61,7 +61,7 @@ return array(
 		),*/
 		// uncomment the following to use a MySQL database
 		
-            
+           
 		'db'=>array(
 			'connectionString' => 'mysql:host=localhost;dbname=gtcclibrary',
 			'emulatePrepare' => true,
@@ -70,14 +70,15 @@ return array(
 			'charset' => 'utf8',
 		),
 		
-                'mongodb' => array(
-                'class'             => 'EMongoDB',
-                'connectionString'  => 'mongodb://127.0.0.1:27017',
-                'dbName'            => 'gtcclibrary',
-                'fsyncFlag'         => false,
-                'safeFlag'          => false,
-                'useCursor'         => false,
-                 ),
+		
+        'mongodb' => array(
+	        'class'             => 'EMongoDB',
+	        'connectionString'  => 'mongodb://127.0.0.1:27017',
+	        'dbName'            => 'gtcclibrary',
+	        'fsyncFlag'         => false,
+	        'safeFlag'          => false,
+	        'useCursor'         => false,
+         ),
             
 		'errorHandler'=>array(
 			// use 'site/error' action to display errors
