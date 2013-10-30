@@ -269,7 +269,6 @@ class BookService extends DoctrineBaseService {
 			if ($offset != null && $count != null)
 			{
 				$allBooks = $this->doctrinemodel->createQueryBuilder('Models\Book')
-				->select('title', 'BianHao', 'ISBN')
 				->skip($offset)
 				->limit($count)
 				->getQuery()
@@ -279,7 +278,6 @@ class BookService extends DoctrineBaseService {
 			else 
 			{
 				$allBooks = $this->doctrinemodel->createQueryBuilder('Models\Book')
-				->select('title', 'BianHao', 'ISBN')
 				->getQuery()
 				->execute()
 				->toArray();

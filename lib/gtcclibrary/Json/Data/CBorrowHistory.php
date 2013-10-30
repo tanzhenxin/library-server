@@ -11,6 +11,7 @@ class CBorrowHistory
 	public $planReturnDate;
 	public $realReturnDate;
 	public $ISBN;
+	public $book;
 		
 	public function  __construct(\Models\BorrowHistory $borrowRecord)
 	{
@@ -21,5 +22,6 @@ class CBorrowHistory
 		$this->borrowDate = $borrowRecord->getStartBorrowDate();
 		$this->planReturnDate = $borrowRecord->getPlanReturnDate();
 		$this->realReturnDate = $borrowRecord->getRealReturnDate();
+		$this->book = new CBook($borrowRecord->getBook());
 	}
 }
