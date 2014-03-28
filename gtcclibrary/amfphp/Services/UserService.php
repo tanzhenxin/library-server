@@ -18,15 +18,15 @@ class UserService extends DoctrineBaseService {
 		$response = new UserResponse();
 		
 		try {
-			$allBooks = $this->doctrinemodel->createQueryBuilder('Models\User')->getQuery()->execute()->toArray();
+			$allUsers = $this->doctrinemodel->createQueryBuilder('Models\User')->getQuery()->execute()->toArray();
 						
-			if ($allBooks != NULL) {
+			if ($allUsers != NULL) {
 				$response->_returnCode = ErrorCode::OK;
 				
 				$response->Users = array();
 				
-				foreach ($allBooks as $book) {
-					array_push($response->Users, new CUser($book));
+				foreach ($allUsers as $user) {
+					array_push($response->Users, new CUser($user));
 				}
 			}	
 			else {
@@ -52,15 +52,14 @@ class UserService extends DoctrineBaseService {
 			if($result != NULL)
 			{
 				$response->_returnCode = ErrorCode::UserAlreadyExists;
-			}else
-			{
+			} else {
 				$pwd = base64_encode(md5(trim($pwd)));
 				$user = new User($username, $pwd,$email);
 				$this->doctrinemodel->persist($user);
 				$this->doctrinemodel->flush();
 				
 				$response->_returnCode = ErrorCode::OK;
-				$response->user = $user;
+				$response->user = new CUser($user);
 			}
 		}
 		catch ( Exception $e ) {
@@ -132,7 +131,26 @@ class UserService extends DoctrineBaseService {
 		}
 		
 		return $response;
+	}
+
+	function UploadImage($username, $image)
+	{
+		$response = new UserResponse();
 		
+		try {
+			$imageName = $_SERVER['DOCUMENT_ROOT'].'/gtcclibrary/Images/'.$username.'.jpg';
+			$file = fopen($imageName, 'wb');
+			fwrite($file, base64_decode($image));
+			fclose($file);
+
+			$response->_returnCode = ErrorCode::OK;
+		}
+		catch ( Exception $e ) {
+			$response->_returnCode = ErrorCode::Failed;
+			$response->_returnMessage = $e->__toString ();
+		}
+		
+		return $response;
 	}
 }
 ?>	

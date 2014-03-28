@@ -269,6 +269,7 @@ class BookService extends DoctrineBaseService {
 			if ($offset != null && $count != null)
 			{
 				$allBooks = $this->doctrinemodel->createQueryBuilder('Models\Book')
+				->select('title', 'BianHao', 'ISBN', 'author', 'publisher', 'publishedDate', 'price')
 				->skip($offset)
 				->limit($count)
 				->getQuery()
@@ -278,6 +279,7 @@ class BookService extends DoctrineBaseService {
 			else 
 			{
 				$allBooks = $this->doctrinemodel->createQueryBuilder('Models\Book')
+				->select('title', 'BianHao', 'ISBN', 'author', 'publisher', 'publishedDate', 'price')
 				->getQuery()
 				->execute()
 				->toArray();
@@ -287,7 +289,97 @@ class BookService extends DoctrineBaseService {
 				$response->_returnCode = ErrorCode::OK;
 				
 				$response->Books = array();
+					
+				foreach ($allBooks as $book) {
+					array_push($response->Books, new CBook($book));
+				}
+			}	
+			else {
+				$response->_returnCode = ErrorCode::CannotGetBookList; 
+			}
+		
+		} catch ( Exception $e ) {
+			$response->_returnCode = ErrorCode::Failed;
+			$response->_returnMessage = $e->getMessage ();
+		}
+		return $response;
+	}
+
+	function GetAllBooksByCategory($category, $offset, $count) {
+		$response = new Json\Commands\BookResponse();
+		
+		try {
+			if ($offset != null && $count != null)
+			{
+				$allBooks = $this->doctrinemodel->createQueryBuilder('Models\Book')
+				->select('title', 'BianHao', 'ISBN', 'author', 'publisher', 'publishedDate', 'price')
+				->skip($offset)
+				->limit($count)
+				->field('BianHao')->where("function() { return this.BianHao.startsWith(\"".$category."\"); }")
+				->getQuery()
+				->execute()
+				->toArray();
+			}
+			else 
+			{
+				$allBooks = $this->doctrinemodel->createQueryBuilder('Models\Book')
+				->select('title', 'BianHao', 'ISBN', 'author', 'publisher', 'publishedDate', 'price')
+				->field('BianHao')->where("function() { return this.BianHao.startsWith(\"".$category."\"); }")
+				->getQuery()
+				->execute()
+				->toArray();
+			}
+			
+			if ($allBooks != NULL) {
+				$response->_returnCode = ErrorCode::OK;
 				
+				$response->Books = array();
+					
+				foreach ($allBooks as $book) {
+					array_push($response->Books, new CBook($book));
+				}
+			}	
+			else {
+				$response->_returnCode = ErrorCode::CannotGetBookList; 
+			}
+		
+		} catch ( Exception $e ) {
+			$response->_returnCode = ErrorCode::Failed;
+			$response->_returnMessage = $e->getMessage ();
+		}
+		return $response;
+	}
+
+	function SearchBooks($title, $offset, $count) {
+		$response = new Json\Commands\BookResponse();
+		
+		try {
+			if ($offset != null && $count != null)
+			{
+				$allBooks = $this->doctrinemodel->createQueryBuilder('Models\Book')
+				->select('title', 'BianHao', 'ISBN', 'author', 'publisher', 'publishedDate', 'price')
+				->skip($offset)
+				->limit($count)
+				->field('title')->equals(new \MongoRegex('/.*'.$title.'.*/i'))
+				->getQuery()
+				->execute()
+				->toArray();
+			}
+			else 
+			{
+				$allBooks = $this->doctrinemodel->createQueryBuilder('Models\Book')
+				->select('title', 'BianHao', 'ISBN', 'author', 'publisher', 'publishedDate', 'price')
+				->field('title')->equals(new \MongoRegex('/.*'.$title.'.*/i'))
+				->getQuery()
+				->execute()
+				->toArray();
+			}
+			
+			if ($allBooks != NULL) {
+				$response->_returnCode = ErrorCode::OK;
+				
+				$response->Books = array();
+					
 				foreach ($allBooks as $book) {
 					array_push($response->Books, new CBook($book));
 				}

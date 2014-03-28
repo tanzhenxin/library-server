@@ -57,6 +57,16 @@ class BorrowService extends DoctrineBaseService {
 	 		{
 	 			$response->_returnCode = ErrorCode::NoSuchBook;
 	 		}else{
+	 			//check whether the book is in borrowed status.
+	 			$result = $this->doctrinemodel->getRepository ( 'Models\BorrowHistory' )
+					->findOneBy ( array ('book.$id' => new \MongoId($book->getId()),'realReturnDate' => '-1') );
+				if($result != NULL)
+				{
+					$response->_returnCode = ErrorCode::Failed;
+					return $response;
+				}
+	 			
+				//It can be borrowed
 	 			$starBorrowDate = time();
 	 			$planReturnDate = strtotime( '+1 month', $starBorrowDate );
 	 			
@@ -90,6 +100,16 @@ class BorrowService extends DoctrineBaseService {
 			{
 				$response->_returnCode = ErrorCode::NoSuchBook;
 			}else{
+				//check whether the book is in borrowed status.
+	 			$result = $this->doctrinemodel->getRepository ( 'Models\BorrowHistory' )
+					->findOneBy ( array ('book.$id' => new \MongoId($book->getId()),'realReturnDate' => '-1') );
+				if($result == NULL)
+				{
+					$response->_returnCode = ErrorCode::Failed;
+					return $response;
+				}
+				
+				//It can be returned
 				$realReturnDate = Date($this->dateFormat,time());		
 				
 				$this->doctrinemodel->createQueryBuilder('Models\BorrowHistory')
@@ -135,7 +155,6 @@ class BorrowService extends DoctrineBaseService {
 			}
 			else 
 			{
-				$response->_returnCode = ErrorCode::Failed;
 				$response->_returnCode = ErrorCode::NoSuchBook;
 			}
 		}
