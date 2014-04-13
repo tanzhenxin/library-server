@@ -1,8 +1,6 @@
 <?php 
 
-namespace Constant;
-
-class ErrorCode
+class YiiErrorCode
 {
 	// >=0 means success, >0 means success but return special code..
 		

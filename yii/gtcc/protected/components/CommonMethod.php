@@ -27,4 +27,25 @@ class CommonMethod
         //var_dump($result);
         return $result;
     }
+
+    private static $category = array(
+        'E' => 'Engineering',
+        'F' => 'Foreign Languages',
+        'M' => 'Management',
+        'S' => 'Self-improvement',
+        'T' => 'Technical',
+        'Z' => 'Miscellous'
+        );
+    
+    public static function GetCategory($bianhao)
+    {
+        // Get the first letter of book tag
+        return self::$category[$bianhao[0]];
+    }
+    
+    public static function GetCategoryArray()
+    {
+        return self::$category;
+    }
 }
+

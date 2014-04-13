@@ -105,4 +105,9 @@ class BookStoreController extends Controller
 			Yii::app()->end();
 		}
 	}
+        
+        protected function getCategoryName($data)
+        {
+            die(var_dump($data));
+        } 
 }

@@ -57,6 +57,17 @@ class BorrowService extends DoctrineBaseService {
 	 		{
 	 			$response->_returnCode = ErrorCode::NoSuchBook;
 	 		}else{
+                               // check whether you have borrowed 3 books
+                                $borrowedResult = $this->doctrinemodel->getRepository ( 'Models\BorrowHistory' )
+                                        ->findBy(array('user.$id'=> new \MongoId($user->getId()), 'realReturnDate' => '-1'))->toArray();
+                                
+                                //die(var_dump($borrowedResult));
+                                if($borrowedResult != null && count($borrowedResult) >= 3)
+                                {
+                                    $response->_returnCode = ErrorCode::BorrowedBookExceed3;
+                                    return $response;
+                                }
+                            
 	 			//check whether the book is in borrowed status.
 	 			$result = $this->doctrinemodel->getRepository ( 'Models\BorrowHistory' )
 					->findOneBy ( array ('book.$id' => new \MongoId($book->getId()),'realReturnDate' => '-1') );

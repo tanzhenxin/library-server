@@ -33,20 +33,29 @@ $('.search-form form').submit(function(){
 <div id="mainmenu">
 <?php
 
+// Available book option
+$checkedValue = isset($_GET['available']) ? $_GET['available']: 0 ;
+
 $url = '/bookStore/index';
+
+// Get All menu
+$categoryArray = array(
+    array('label'=>'All', 'url'=>array($url, 'available'=>$checkedValue), 'active'=> !isset($_GET['category'])?true:false)
+);
+
+// Get other menu
+foreach (CommonMethod::GetCategoryArray() as $key => $value) {
+    array_push($categoryArray, array('label'=>$value, 'url'=>array($url,'category'=>$key,'available'=>$checkedValue)));
+}
+
 $this->widget('zii.widgets.CMenu',array(
-        'items'=>array(
-                array('label'=>'All', 'url'=>array($url), 'active'=> !isset($_GET['category'])?true:false),
-                array('label'=>'Self-Improvement', 'url'=>array($url,'category'=>'A')), 
-                array('label'=>'English Learning', 'url'=>array($url,'category'=>'B')),
-                array('label'=>'Miscellaneous', 'url'=>array($url,'category'=>'C')),
-                array('label'=>'Technology', 'url'=>array($url,'category'=>'D')),
-        ),
-)); ?>
+        'items'=>$categoryArray,
+)); 
+
+?>
 </div>
 
 <?php
-
 $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$model->search(),
 	'itemView'=>'_view',

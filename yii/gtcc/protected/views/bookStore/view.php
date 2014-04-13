@@ -20,12 +20,13 @@ $this->breadcrumbs=array(
                      <?php 
                            
                             $bookTag = $model->BianHao;
-                            $result = CommonMethod::sendRequest('BorrowService', 'checkWhetherBookInBorrow', array($bookTag));                          
-                            if($result->_returnCode == 0)
+                            $result = CommonMethod::sendRequest('BorrowService', 'checkWhetherBookInBorrow', array($bookTag));  
+                            if($result->_returnCode == YiiErrorCode::OK)
                             {
                                 echo "Borrowed by : ".$result->borrowHistory->username;
                                 echo "<br>Plan Return Date: ".$result->borrowHistory->planReturnDate;  
-                            }else
+                            }
+                            else
                             {
                                 //echo CHtml::link('Borrow', Yii::app()->createUrl('borrowHistory/Create&userName='.Yii::app()->user->name."&bookTag=".$model->BianHao)); 
                                 echo CHtml::ajaxButton('Borrow', Yii::app()->createUrl('borrowHistory/ajaxCreate'),
@@ -43,10 +44,14 @@ $this->breadcrumbs=array(
                                         if(json._returnCode == 0)
                                         {
                                             document.getElementById("successMsg").innerHTML="Borrow Successfully!";
+                                        }else if(json._returnCode == -303)
+                                        {
+                                            document.getElementById("successMsg").innerHTML="You can only borrow Max 3 books!";
                                         }else
                                         {
                                             document.getElementById("successMsg").innerHTML="Borrow Failed!";
                                         }
+
                                         document.getElementById("button1").style.visibility=\'hidden\';
                                         
                                    }'
@@ -68,7 +73,10 @@ $this->breadcrumbs=array(
 
 
 <br>
-<?php $this->widget('zii.widgets.CDetailView', array(
+
+<?php
+
+$this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,
 	'attributes'=>array(
 		'ISBN',
@@ -81,6 +89,11 @@ $this->breadcrumbs=array(
 		'publisher',
 		'language',
 		'printLength',
+                array('name' => 'Category',
+                      'value' => CommonMethod::GetCategory($model->BianHao),
+                ),
 		//'_id',
 	),
-)); ?>
+        
+)); 
+?>
