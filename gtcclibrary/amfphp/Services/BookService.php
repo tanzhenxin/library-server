@@ -315,7 +315,7 @@ class BookService extends DoctrineBaseService {
 				->select('title', 'BianHao', 'ISBN', 'author', 'publisher', 'publishedDate', 'price')
 				->skip($offset)
 				->limit($count)
-				->field('BianHao')->where("function() { return this.BianHao.startsWith(\"".$category."\"); }")
+				->field('BianHao')->equals(new \MongoRegex('/'.$category.'.*/i'))
 				->getQuery()
 				->execute()
 				->toArray();
@@ -324,7 +324,7 @@ class BookService extends DoctrineBaseService {
 			{
 				$allBooks = $this->doctrinemodel->createQueryBuilder('Models\Book')
 				->select('title', 'BianHao', 'ISBN', 'author', 'publisher', 'publishedDate', 'price')
-				->field('BianHao')->where("function() { return this.BianHao.startsWith(\"".$category."\"); }")
+				->field('BianHao')->equals(new \MongoRegex('/'.$category.'.*/i'))
 				->getQuery()
 				->execute()
 				->toArray();
