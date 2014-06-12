@@ -65,6 +65,12 @@
 		<?php echo $form->error($model,'printLength'); ?>
 	</div>
         
+        <div class="row">
+		<?php echo $form->labelEx($model,'language'); ?>
+		<?php echo $form->textField($model,'language'); ?>
+		<?php echo $form->error($model,'language'); ?>
+	</div>
+                    
         </td>
         <td>
             

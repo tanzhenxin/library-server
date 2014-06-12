@@ -64,6 +64,11 @@ class BookStoreController extends Controller
                 $model->setAttributes(array("BianHao"=>$_GET['category']));            
             }
             
+            // sort by tag asc
+            $criteria = new EMongoCriteria;
+            $criteria->sort("BianHao", EMongoCriteria::SORT_ASC);
+            $model->setDbCriteria($criteria);
+            
             $this->render('index',array(
                            'model'=>$model
                    ));

@@ -67,12 +67,12 @@ class BorrowHistory extends EMongoDocument
 	public function attributeLabels()
 	{
 		return array(
-                    'planReturnDate' => 'Plan Return Date',
-                    'realReturnDate' => 'Actual Return Date',
-                    'startBorrowDate' => 'Start Borrow Date',
+                    'planReturnDate' => 'Due Date',
+                    'realReturnDate' => 'Returned Date',
+                    'startBorrowDate' => 'Borrowed Date',
                     'userName' => 'User Name',
-                    'bookName' => 'Book Name',
-                    'bookTag' => 'Book Tag',
+                    'bookName' => 'Title',
+                    'bookTag' => 'Tag',
                     '_id' => 'ID',
 		);
 	}

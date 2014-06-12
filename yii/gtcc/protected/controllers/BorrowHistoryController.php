@@ -182,22 +182,31 @@ class BorrowHistoryController extends Controller
         protected function getBookTitle($data,$row)
          {
             $bookInfo = $data->book;
-            $book = Book::model()->findByPk($bookInfo['$id']); 
-            return $book->title;
+            $book = Book::model()->findByPk($bookInfo['$id']);
+            if($book != NULL)
+                return $book->title;
+            else
+                return '';
         } 
         
         protected function getBookTag($data,$row)
          {
             $bookInfo = $data->book;
             $book = Book::model()->findByPk($bookInfo['$id']); 
-            return $book->BianHao;
+            if($book != NULL)
+                return $book->BianHao;
+             else
+                return '';
         } 
         
         protected function getUserName($data,$row)
          {
             $userInfo = $data->user;
             $user = User::model()->findByPk($userInfo['$id']); 
-            return $user->username;
+            if($user != NULL)
+                return $user->username;
+            else
+                return '';
         } 
         
         /**

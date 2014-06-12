@@ -1,9 +1,13 @@
-<div class="view">
 <?php 
 $bookInfo = $data->book;
 $book = Book::model()->findByPk($bookInfo['$id']);
-
+if(empty($book))
+{
+    return;
+}
 ?>
+
+<div class="view"> 
 <div id="no1">
     <div id="no2">
         <div id="no2-1"><img src='<?php echo '../../gtcclibrary/images/'.$book->ISBN.'.jpg'; ?>'/>
@@ -21,10 +25,19 @@ $book = Book::model()->findByPk($bookInfo['$id']);
            <?php echo CHtml::encode($data->startBorrowDate); ?>
            <br /></li>
                  <?php 
+                 
                  if($data->realReturnDate == -1)
-                 echo '<li><b>'.CHtml::encode($data->getAttributeLabel('planReturnDate')).' :</b> '
-                                .CHtml::encode($data->planReturnDate)
+                 {
+                     $color = "blue";
+                     $today = date("Y-m-d");
+                     if($today > $data->planReturnDate)
+                     {
+                         $color = "red";
+                     }
+                       echo '<li><b>'.CHtml::encode($data->getAttributeLabel('planReturnDate')).' : </b><label style="color: '.$color.'">'
+                                .CHtml::encode($data->planReturnDate).'</label>'
                       .'<br/></li>';
+                 }
                 
                  if($data->realReturnDate != -1)
                  {
@@ -33,7 +46,7 @@ $book = Book::model()->findByPk($bookInfo['$id']);
                  }
                  ?>
            
-                 <li><b>
+                 <li><br>
                          <?php 
                          
                          $buttonName = uniqid();
@@ -53,7 +66,7 @@ $book = Book::model()->findByPk($bookInfo['$id']);
                                                 var json = JSON.parse(data);
                                                 if(json._returnCode == 0)
                                                 {
-                                                    document.getElementById(\"$errormessageId\").innerHTML=\"Return Successfully!\";
+                                                    document.getElementById(\"$errormessageId\").innerHTML=\"Returned successfully!\";
                                                 }else
                                                 {
                                                     document.getElementById(\"$errormessageId\").innerHTML=\"Return Failed!\";

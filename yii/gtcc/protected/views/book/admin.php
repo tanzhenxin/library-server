@@ -3,13 +3,12 @@
 /* @var $model Book */
 
 $this->breadcrumbs=array(
-	'Books'=>array('index'),
+	'Manage Books',
 	'Manage',
 );
 
-$this->menu=array(
-	array('label'=>'List Book', 'url'=>array('index')),
-	array('label'=>'Create Book', 'url'=>array('create')),
+$this->menu=array(	
+	array('label'=>'Add a book', 'url'=>array('create')),
 );
 
 Yii::app()->clientScript->registerScript('search', "
@@ -29,11 +28,6 @@ $('.search-form form').submit(function(){
 
 <h1>Manage Books</h1>
 
-<p>
-You may optionally enter a comparison operator (<b>&lt;</b>, <b>&lt;=</b>, <b>&gt;</b>, <b>&gt;=</b>, <b>&lt;&gt;</b>
-or <b>=</b>) at the beginning of each of your search values to specify how the comparison should be done.
-</p>
-
 <?php echo CHtml::link('Advanced Search','#',array('class'=>'search-button')); ?>
 <div class="search-form" style="display:none">
 <?php $this->renderPartial('_search',array(
@@ -47,14 +41,28 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 	'filter'=>$model,
 	'columns'=>array(
 		'ISBN',
-		'title',
-		'price',
-		'BianHao',
-		'author',
-		'publishedDate',
-		'publisher',
+                array(            
+                'name'=>'title',
+                'header'=>'Title',
+                 ),
+                array(            
+                'name'=>'BianHao',
+                'header'=>'Tag',
+                 ),
+                array(            
+                'name'=>'author',
+                'header'=>'Author',
+                 ),
+		array(            
+                'name'=>'publishedDate',
+                'header'=>'Publication Date',
+                 ),
+                array(            
+                'name'=>'publisher',
+                'header'=>'Publisher',
+                 ),
 		//'language',
-		'printLength',
+		//'printLength',
                 //'description',
 		//'_id',
 		

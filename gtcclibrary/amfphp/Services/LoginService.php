@@ -17,13 +17,18 @@ class LoginService extends DoctrineBaseService {
 		$response = new \Json\Commands\LoginResponse ();
 		
 		try {
-			$user = $this->doctrinemodel->getRepository ( 'Models\User' )->findOneBy ( array ('username' => $username));
+			$user = $this->doctrinemodel->createQueryBuilder('Models\User')
+			->field('username')->equals(new \MongoRegex('/^'.$username.'$/i'))
+			->getQuery()
+			->execute()
+			->toArray();
+
 			//echo '#'.$username.'#';
 			//echo $user;
 			if ($user != null) {
 				$encrypt = base64_encode(md5(trim($password)));
 				//the user and pwd is correct.
-				if (strcmp ( $encrypt, $user->getPwd() ) == 0) {
+				if (strcmp ( $encrypt, current($user)->getPwd() ) == 0) {
 					// if login in different place, send a notification here..
 					$response->_returnCode = ErrorCode::OK;
 				} else {

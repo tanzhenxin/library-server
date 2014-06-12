@@ -3,7 +3,7 @@
 /* @var $model BorrowHistory */
 
 $this->breadcrumbs=array(
-	'BorrowHistory'=>array('index'),
+	'Manage Records',
 	'Manage',
 );
 
@@ -18,7 +18,7 @@ $('.search-button').click(function(){
 	return false;
 });
 $('.search-form form').submit(function(){
-	$.fn.yiiGridView.update('book-grid', {
+	$.fn.yiiGridView.update('borrowHistory-grid', {
 		data: $(this).serialize()
 	});
 	return false;
@@ -27,12 +27,7 @@ $('.search-form form').submit(function(){
 
 ?>
 
-<h1>Manage BorrowHistory</h1>
-
-<p>
-You may optionally enter a comparison operator (<b>&lt;</b>, <b>&lt;=</b>, <b>&gt;</b>, <b>&gt;=</b>, <b>&lt;&gt;</b>
-or <b>=</b>) at the beginning of each of your search values to specify how the comparison should be done.
-</p>
+<h1>Manage Records</h1>
 
 <?php echo CHtml::link('Advanced Search','#',array('class'=>'search-button')); ?>
 <div class="search-form" style="display:none">
@@ -49,12 +44,12 @@ $this->widget('zii.widgets.grid.CGridView', array(
 	'columns'=>array(
                 array(            
                 'name'=>'bookName',
-                'header'=>'Book Name',
+                'header'=>'Title',
                 'value'=>array($this,'getBookTitle'), 
                  ),
                 array(            
                 'name'=>'bookTag',
-                'header'=>'Book Tag',
+                'header'=>'Tag',
                 'value'=>array($this,'getBookTag'), 
                  ),
                 array(            
@@ -64,15 +59,15 @@ $this->widget('zii.widgets.grid.CGridView', array(
                  ),
                 array(            
                 'name'=>'startBorrowDate',
-                'header'=>'Start Borrow Date',
+                'header'=>'Borrowed Date',
                  ),
                 array(            
                 'name'=>'planReturnDate',
-                'header'=>'Plan Return Date',
+                'header'=>'Due Date',
                  ),
                 array(            
                 'name'=>'realReturnDate',
-                'header'=>'Real Return Date',
+                'header'=>'Returned Date',
                 'value'=>array($this,'gridDataColumn'), 
                  ),       
 		//'_id',

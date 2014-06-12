@@ -47,7 +47,11 @@ class BorrowService extends DoctrineBaseService {
 	 	
 	 	try
 	 	{
-	 		$user = $this->doctrinemodel->getRepository ( 'Models\User' )->findOneBy ( array ('username' => $username ) );
+	 		$user = $this->doctrinemodel->createQueryBuilder('Models\User')
+			->field('username')->equals(new \MongoRegex('/^'.$username.'$/i'))
+			->getQuery()
+			->execute()
+			->toArray();
 	 		$book = $this->doctrinemodel->getRepository ( 'Models\Book' )->findOneBy ( array ('BianHao' => $bookBianhao) );
 	 		
 	 		if($user == null)
@@ -57,16 +61,17 @@ class BorrowService extends DoctrineBaseService {
 	 		{
 	 			$response->_returnCode = ErrorCode::NoSuchBook;
 	 		}else{
-                               // check whether you have borrowed 3 books
-                                $borrowedResult = $this->doctrinemodel->getRepository ( 'Models\BorrowHistory' )
-                                        ->findBy(array('user.$id'=> new \MongoId($user->getId()), 'realReturnDate' => '-1'))->toArray();
-                                
-                                //die(var_dump($borrowedResult));
-                                if($borrowedResult != null && count($borrowedResult) >= 3)
-                                {
-                                    $response->_returnCode = ErrorCode::BorrowedBookExceed3;
-                                    return $response;
-                                }
+	 			$user = current($user);
+               // check whether you have borrowed 3 books
+                $borrowedResult = $this->doctrinemodel->getRepository ( 'Models\BorrowHistory' )
+                        ->findBy(array('user.$id'=> new \MongoId($user->getId()), 'realReturnDate' => '-1'))->toArray();
+                
+                //die(var_dump($borrowedResult));
+                if($borrowedResult != null && count($borrowedResult) >= 3)
+                {
+                    $response->_returnCode = ErrorCode::BorrowedBookExceed3;
+                    return $response;
+                }
                             
 	 			//check whether the book is in borrowed status.
 	 			$result = $this->doctrinemodel->getRepository ( 'Models\BorrowHistory' )
@@ -101,7 +106,11 @@ class BorrowService extends DoctrineBaseService {
 		 
 		try
 		{
-			$user = $this->doctrinemodel->getRepository ( 'Models\User' )->findOneBy ( array ('username' => $username ) );
+			$user = $this->doctrinemodel->createQueryBuilder('Models\User')
+			->field('username')->equals(new \MongoRegex('/^'.$username.'$/i'))
+			->getQuery()
+			->execute()
+			->toArray();			
 			$book = $this->doctrinemodel->getRepository ( 'Models\Book' )->findOneBy ( array ('BianHao' => $bookBianhao) );
 		
 			if($user == null)
@@ -111,6 +120,7 @@ class BorrowService extends DoctrineBaseService {
 			{
 				$response->_returnCode = ErrorCode::NoSuchBook;
 			}else{
+				$user = current($user);
 				//check whether the book is in borrowed status.
 	 			$result = $this->doctrinemodel->getRepository ( 'Models\BorrowHistory' )
 					->findOneBy ( array ('book.$id' => new \MongoId($book->getId()),'realReturnDate' => '-1') );
@@ -183,20 +193,37 @@ class BorrowService extends DoctrineBaseService {
 		$response = new BorrowResponse();
 		
 		try {
-			$user = $this->doctrinemodel->getRepository ( 'Models\User' )->findOneBy ( array ('username' => $username ) );
+			$user = $this->doctrinemodel->createQueryBuilder('Models\User')
+			->field('username')->equals(new \MongoRegex('/^'.$username.'$/i'))
+			->getQuery()
+			->execute()
+			->toArray();			
 			
-			$result = $this->doctrinemodel->getRepository ( 'Models\BorrowHistory' )
-			->findBy ( array ('user.$id' => new \MongoId($user->getId()),'realReturnDate' => '-1') );
-			if($result != NULL)
+			if ($user != null) 
 			{
-				$response->_returnCode = ErrorCode::OK;
-				$response->borrowInfo = array();
-				foreach ($result as $borrowHistory) {
-					array_push($response->borrowInfo, new CBorrowHistory($borrowHistory));
+				$user = current($user);
+				$result = $this->doctrinemodel->createQueryBuilder('Models\BorrowHistory')
+				->field('user.$id')->equals(new \MongoId($user->getId()))
+				->field('realReturnDate')->equals('-1')
+				->sort('startBorrowDate', -1)
+				->getQuery()
+				->execute()
+				->toArray();
+				
+				if($result != NULL)
+				{
+					$response->_returnCode = ErrorCode::OK;
+					$response->borrowInfo = array();
+					foreach ($result as $borrowHistory) {
+						array_push($response->borrowInfo, new CBorrowHistory($borrowHistory));
+					}
+				}else
+				{
+					$response->_returnCode = ErrorCode::NoBookInBorrow;
 				}
-			}else
+			} else 
 			{
-				$response->_returnCode = ErrorCode::NoBookInBorrow;
+				$response->_returnCode = ErrorCode::InvalidUser;
 			}
 		}
 		catch ( Exception $e ) {
@@ -204,6 +231,51 @@ class BorrowService extends DoctrineBaseService {
 			$response->_returnMessage = $e->__toString ();
 		}
 		
+		return $response;
+	}
+
+	function getBorrowedInfo($username)
+	{
+		$response = new BorrowResponse();
+		try {
+			$user = $this->doctrinemodel->createQueryBuilder('Models\User')
+			->field('username')->equals(new \MongoRegex('/^'.$username.'$/i'))
+			->getQuery()
+			->execute()
+			->toArray();			
+			if ($user != null)
+			{
+				$user = current($user);
+				$result = $this->doctrinemodel->createQueryBuilder('Models\BorrowHistory')
+				->field('user.$id')->equals(new \MongoId($user->getId()))
+				->field('realReturnDate')->notEqual('-1')
+				->sort('realReturnDate', -1)
+				->getQuery()
+				->execute()
+				->toArray();
+
+				if ($result != null)
+				{
+					$response->_returnCode = ErrorCode::OK;
+					$response->borrowInfo = array();
+					foreach ($result as $borrowHistory) {
+						array_push($response->borrowInfo, new CBorrowHistory($borrowHistory));
+					}
+				}
+				else
+				{
+					$response->_returnCode = ErrorCode::NoBookInBorrow;
+				}
+			} else 
+			{
+				$response->_returnCode = ErrorCode::InvalidUser;
+			}
+		}
+		catch ( Exception $e ) {
+			$response->_returnCode = ErrorCode::Failed;
+			$response->_returnMessage = $e->__toString ();
+		}
+
 		return $response;
 	}
 	

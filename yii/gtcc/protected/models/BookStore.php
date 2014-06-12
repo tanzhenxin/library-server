@@ -78,10 +78,10 @@ class BookStore extends EMongoDocument
 			'BianHao' => 'Bian Hao',
 			'description' => 'Description',
 			'author' => 'Author',
-			'publishedDate' => 'Published Date',
+			'publishedDate' => 'Publication Date',
 			'publisher' => 'Publisher',
 			'language' => 'Language',
-			'printLength' => 'Print Length',
+			'printLength' => 'Pages',
 		);
 	}
 }

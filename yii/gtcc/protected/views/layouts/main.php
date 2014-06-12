@@ -23,7 +23,16 @@
 <div class="container" id="page">
 
 	<div id="header">
-		<div id="logo"><?php echo CHtml::encode(Yii::app()->name); ?></div>
+            <table>
+                <tr>
+                    <td width="64">
+                        <img width="64" height="64" src="<?php echo Yii::app()->request->baseUrl;?>/../../gtcclibrary/Images/logo.jpg"/>                    
+                    </td>
+                    <td>
+                        <div id="logo" align="left"><?php echo CHtml::encode(Yii::app()->name); ?></div>
+                    </td>
+                </tr>
+            </table>	
 	</div><!-- header -->
 
 	<div id="mainmenu">
@@ -31,12 +40,12 @@
 			'items'=>array(
 				//array('label'=>'Home', 'url'=>array('/site/index')),
 				//array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
-				array('label'=>'MyLibrary', 'url'=>array('/myLibrary/index'), 'visible'=>!Yii::app()->user->isGuest),
-                                array('label'=>'BookLibrary', 'url'=>array('/bookStore/index')),
-                                array('label'=>'Book', 'url'=>array('/book/admin'), 'visible'=>Yii::app()->user->name == 'admin'),
-                                array('label'=>'User', 'url'=>array('/user/admin'), 'visible'=>Yii::app()->user->name == 'admin' ),
-                                array('label'=>'BorrowHistory', 'url'=>array('/borrowHistory/admin'), 'visible'=>Yii::app()->user->name == 'admin' ),
-                                array('label'=>'Contact', 'url'=>array('/site/contact')),
+				array('label'=>'My Books', 'url'=>array('/myLibrary/index'), 'visible'=>!Yii::app()->user->isGuest),
+                                array('label'=>'Library', 'url'=>array('/bookStore/index')),
+                                array('label'=>'Manage Books', 'url'=>array('/book/admin'), 'visible'=>Yii::app()->user->name == 'admin'),
+                                array('label'=>'Manage Users', 'url'=>array('/user/admin'), 'visible'=>Yii::app()->user->name == 'admin' ),
+                                array('label'=>'Manage Records', 'url'=>array('/borrowHistory/admin'), 'visible'=>Yii::app()->user->name == 'admin' ),
+                                array('label'=>'Contact Us', 'url'=>array('/site/contact')),
                                 array('label'=>'Change Password', 'url'=>array('/user/changePassword'), 'visible'=>!Yii::app()->user->isGuest),
 				array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
 				array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)

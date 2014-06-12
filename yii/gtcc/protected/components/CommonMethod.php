@@ -34,13 +34,14 @@ class CommonMethod
         'M' => 'Management',
         'S' => 'Self-improvement',
         'T' => 'Technical',
-        'Z' => 'Miscellous'
+        'Z' => 'Miscellaneous'
         );
     
     public static function GetCategory($bianhao)
     {
         // Get the first letter of book tag
-        return self::$category[$bianhao[0]];
+        if(!empty($bianhao))
+            return self::$category[$bianhao[0]];
     }
     
     public static function GetCategoryArray()

@@ -12,6 +12,10 @@ $this->breadcrumbs=array(
 <h1>Contact Us</h1>
 
 <p>
-If you have suggestions or other questions, please contact Rita or send the mail to <a href="mailto:xu.wang@cn.unisys.com">xu.wang@cn.unisys.com</a>
+If you have any suggestions or questions, please contact Rita Wang or send an email to <a href="mailto:xu.wang@cn.unisys.com">xu.wang@cn.unisys.com</a>
 </p>
 
+<div align="center">
+<img src="images/contact.jpg" >
+</div>
+    

@@ -6,7 +6,7 @@ $this->breadcrumbs=array(
 
 ?>
 
-<h1>Book Detail :<?php echo $model->bookName; ?></h1>
+<h1>Book Details:<?php echo $model->bookName; ?></h1>
 
 <div><img src="<?php echo 'images\\'.$model->ISBN.'.jpg'; ?>"/></div>
 

@@ -16,11 +16,6 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'description'); ?>
-		<?php echo $form->textField($model,'description'); ?>
-	</div>
-
-	<div class="row">
 		<?php echo $form->label($model,'author'); ?>
 		<?php echo $form->textField($model,'author'); ?>
 	</div>

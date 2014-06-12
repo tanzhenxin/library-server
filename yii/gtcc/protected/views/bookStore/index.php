@@ -3,7 +3,7 @@
 /* @var $model BookStore */
 
 $this->breadcrumbs=array(
-	'Book Library',
+	'Library',
 );
 
 Yii::app()->clientScript->registerScript('search', "
@@ -20,7 +20,7 @@ $('.search-form form').submit(function(){
 ");
 ?>
 
-<h1>Book Library</h1>
+<h1>Library</h1>
 <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/bookDisplay.css" />
 
 <?php echo CHtml::link('Search','#',array('class'=>'search-button')); ?>

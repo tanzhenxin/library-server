@@ -78,10 +78,10 @@ class Book extends EMongoDocument
 			'BianHao' => 'Tag',
 			'description' => 'Description',
 			'author' => 'Author',
-			'publishedDate' => 'Published Date',
+			'publishedDate' => 'Publication Date',
 			'publisher' => 'Publisher',
 			'language' => 'Language',
-			'printLength' => 'Page',
+			'printLength' => 'Pages',
 		);
 	}
 }

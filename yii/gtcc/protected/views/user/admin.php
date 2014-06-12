@@ -3,12 +3,12 @@
 /* @var $model User */
 
 $this->breadcrumbs=array(
-	'Users'=>array('index'),
+	'Manage Users',
 	'Manage',
 );
 
 $this->menu=array(
-	array('label'=>'List User', 'url'=>array('index')),
+	//array('label'=>'List User', 'url'=>array('index')),
 	array('label'=>'Create User', 'url'=>array('create')),
 );
 
@@ -29,11 +29,6 @@ $('.search-form form').submit(function(){
 
 <h1>Manage Users</h1>
 
-<p>
-You may optionally enter a comparison operator (<b>&lt;</b>, <b>&lt;=</b>, <b>&gt;</b>, <b>&gt;=</b>, <b>&lt;&gt;</b>
-or <b>=</b>) at the beginning of each of your search values to specify how the comparison should be done.
-</p>
-
 <?php echo CHtml::link('Advanced Search','#',array('class'=>'search-button')); ?>
 <div class="search-form" style="display:none">
 <?php $this->renderPartial('_search',array(
@@ -46,9 +41,14 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 	'dataProvider'=>$model->search(),
 	'filter'=>$model,
 	'columns'=>array(
-		'username',
-		'email',
-		
+		array(            
+                'name'=>'username',
+                'header'=>'Username',
+                 ),
+                array(            
+                'name'=>'email',
+                'header'=>'Email',
+                 ),
 		array(
 			'class'=>'CButtonColumn',
 		),

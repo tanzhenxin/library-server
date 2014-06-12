@@ -58,7 +58,7 @@ class User extends EMongoDocument
 		return array(
 			'id' => 'ID',
 			'username' => 'Username',
-			'pwd' => 'Pwd',
+			'pwd' => 'Password',
 			'email' => 'Email',
 		);
 	}

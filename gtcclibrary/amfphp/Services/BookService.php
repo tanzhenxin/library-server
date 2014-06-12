@@ -75,7 +75,7 @@ class BookService extends DoctrineBaseService {
 		$response = new BookResponse();
 		
 		try {
-			$result = $this->doctrinemodel->getRepository ( 'Models\Book' )->findOneBy ( array ('BianHao' => $bianHao ) );
+			$result = $this->doctrinemodel->getRepository ( 'Models\Book' )->findOneBy ( array ('BianHao' => strtoupper(trim($bianHao))) );
 			if($result != NULL)
 			{
 				$response->_returnCode = ErrorCode::BianHaoAlreadyExists;
@@ -97,7 +97,7 @@ class BookService extends DoctrineBaseService {
 				// Image name is the ISBN.jpg
 				if(!empty($imageUrl))
 				{
-					$img = file_get_contents($imageUrl); 
+					$img = base64_decode($imageUrl); 
 					
 					$imageName = __DIR__.'/../../Images/'.$ISBN.'.jpg';
 					
@@ -163,7 +163,7 @@ class BookService extends DoctrineBaseService {
 		$response = new BookResponse();
 		
 		try {
-			$result = $this->doctrinemodel->getRepository ( 'Models\Book' )->findOneBy ( array ('BianHao' => $bianhao ) );
+			$result = $this->doctrinemodel->getRepository ( 'Models\Book' )->findOneBy ( array ('BianHao' => strtoupper(trim($bianhao)) ) );
 			if($result == NULL)
 			{
 				$response->_returnCode = ErrorCode::NoSuchBook;
@@ -218,7 +218,7 @@ class BookService extends DoctrineBaseService {
 		$response = new BookResponse();
 		
 		try {
-			$result = $this->doctrinemodel->getRepository ( 'Models\Book' )->findOneBy ( array ('BianHao' => $bianhao ) );
+			$result = $this->doctrinemodel->getRepository ( 'Models\Book' )->findOneBy ( array ('BianHao' => strtoupper(trim($bianhao)) ) );
 			if($result == NULL)
 			{
 				$response->_returnCode = ErrorCode::NoSuchBook;
@@ -251,6 +251,37 @@ class BookService extends DoctrineBaseService {
 			{
 				$response->book = new CBook($result);
 				$response->_returnCode = ErrorCode::OK;
+			}
+		}
+		catch ( Exception $e ) {
+			$response->_returnCode = ErrorCode::Failed;
+			$response->_returnMessage = $e->__toString ();
+		}
+		
+		return $response;
+	}
+        
+        function GetBookListByISBN($ISBN)
+	{
+		$response = new BookResponse();
+		
+		try {
+			$result = $this->doctrinemodel->getRepository ( 'Models\Book' )
+                                                    ->findBy( array ('ISBN' => $ISBN.'' ) )
+                                                    ->toArray();
+			if($result != NULL)
+			{
+                            $response->_returnCode = ErrorCode::OK;
+				
+				$response->BookList = array();
+				
+				foreach ($result as $book) {
+					array_push($response->BookList, new CBook($book));
+				}
+			}
+			else
+			{
+				$response->_returnCode = ErrorCode::Failed;
 			}
 		}
 		catch ( Exception $e ) {
@@ -316,6 +347,7 @@ class BookService extends DoctrineBaseService {
 				->skip($offset)
 				->limit($count)
 				->field('BianHao')->equals(new \MongoRegex('/'.$category.'.*/i'))
+				->sort('title')
 				->getQuery()
 				->execute()
 				->toArray();
@@ -325,6 +357,7 @@ class BookService extends DoctrineBaseService {
 				$allBooks = $this->doctrinemodel->createQueryBuilder('Models\Book')
 				->select('title', 'BianHao', 'ISBN', 'author', 'publisher', 'publishedDate', 'price')
 				->field('BianHao')->equals(new \MongoRegex('/'.$category.'.*/i'))
+				->sort('title')
 				->getQuery()
 				->execute()
 				->toArray();
@@ -361,6 +394,7 @@ class BookService extends DoctrineBaseService {
 				->skip($offset)
 				->limit($count)
 				->field('title')->equals(new \MongoRegex('/.*'.$title.'.*/i'))
+				->sort('title')
 				->getQuery()
 				->execute()
 				->toArray();
@@ -370,6 +404,7 @@ class BookService extends DoctrineBaseService {
 				$allBooks = $this->doctrinemodel->createQueryBuilder('Models\Book')
 				->select('title', 'BianHao', 'ISBN', 'author', 'publisher', 'publishedDate', 'price')
 				->field('title')->equals(new \MongoRegex('/.*'.$title.'.*/i'))
+				->sort('title')
 				->getQuery()
 				->execute()
 				->toArray();

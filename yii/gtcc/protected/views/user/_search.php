@@ -11,18 +11,8 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'pwd'); ?>
-		<?php echo $form->textField($model,'pwd'); ?>
-	</div>
-
-	<div class="row">
 		<?php echo $form->label($model,'email'); ?>
 		<?php echo $form->textField($model,'email'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->label($model,'_id'); ?>
-		<?php echo $form->textField($model,'_id'); ?>
 	</div>
 
 	<div class="row buttons">

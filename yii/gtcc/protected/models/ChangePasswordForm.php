@@ -30,7 +30,7 @@ class ChangePasswordForm extends CFormModel
   {
     if( base64_encode(md5(trim($this->currentPassword))) !== $this->_user->pwd )
     {
-      $this->addError($attribute,'The current password is incorrect');
+      $this->addError($attribute,'The Current Password is incorrect');
     }
   }
   

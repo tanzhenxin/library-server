@@ -1,11 +1,11 @@
 <?php
 $this->breadcrumbs=array(
-	'My Library',
+	'My Books',
 );
 
 ?>
 
-<h1>My Library</h1>
+<h1>My Books</h1>
 <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/bookDisplay.css" />
 <div id="mainmenu">
 <?php
@@ -13,8 +13,8 @@ $this->breadcrumbs=array(
 $url = '/myLibrary/index';
 $this->widget('zii.widgets.CMenu',array(
         'items'=>array(
-                array('label'=>'Book in Borrowed', 'url'=>array($url), 'active'=> !isset($_GET['category'])?true:false),
-                array('label'=>'Book Returned', 'url'=>array($url,'category'=>0)), 
+                array('label'=>'Borrowed Books', 'url'=>array($url), 'active'=> !isset($_GET['category'])?true:false),
+                array('label'=>'Returned Books', 'url'=>array($url,'category'=>0)), 
         ),
 )); ?>
 </div>
