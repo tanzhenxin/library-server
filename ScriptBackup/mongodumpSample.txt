@@ -1,0 +1,2 @@
+mongodump -d gtcclibrary
+mongorestore -d gtcclibrary --drop dump/gtcclibrary
