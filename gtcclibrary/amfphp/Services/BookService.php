@@ -9,13 +9,75 @@ use Models\Book;
 include_once __DIR__ . '/../lib/DoctrineBaseService.php';
 
 class BookService extends DoctrineBaseService {	
+
+	function MigrateAllBooks($offset, $count) {
+		$response = new Json\Commands\BookResponse();
+
+		try {
+			if ($offset != null && $count != null) {
+				$allBooks = $this->doctrinemodel->createQueryBuilder('Models\Book')
+				->skip($offset)
+				->limit($count)
+				->getQuery()
+				->execute()
+				->toArray();
+			} else {
+				$allBooks = $this->doctrinemodel->createQueryBuilder('Models\Book')
+				->getQuery()
+				->execute()
+				->toArray();
+			}
+
+			if ($allBooks != null) {
+				$books = array();
+				foreach ($allBooks as $book) {
+					$book_data = array(
+						"tag" => $book->GetBianHao(),
+						"title" => $book->GetTitle(),
+						"description" => $book->GetDescription(),
+						"author" => $book->GetAuthor(),
+						"publisher" => $book->GetPublisher(),
+						"publishedDate" => $book->GetPublishedDate(),
+						"printLength" => $book->GetPrintLength(),
+						"ISBN" => $book->getISBN(),
+						"price" => $book->getPrice()
+						);
+					$one_req = array("method" => "POST", "path" => "/1.1/classes/Book", "body" => $book_data);
+					array_push($books, $one_req);
+				}
+
+				$requests = array("requests" => $books);
+				$requests_string = json_encode($requests);
+				$header = array(
+			    	'X-AVOSCloud-Application-Id: jbxwg54yxbljq8onqtsdkptcbqs6wm0dt6gebmu7ixgdx3g9',
+			    	'X-AVOSCloud-Application-Key: qn36ldhqtq1surxfp1i7bqj7l2c3a0nm5r37licqrdkzi7uf',
+			    	'Content-Type: application/json','charset: utf-8');
+			    $ch = curl_init();
+			    curl_setopt($ch, CURLOPT_URL, 'https://leancloud.cn/1.1/batch');
+			    curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
+			    curl_setopt($ch, CURLOPT_POSTFIELDS, $requests_string);
+			    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+			    curl_setopt($ch, CURLOPT_HTTPHEADER, $header);
+			    curl_setopt($ch, CURLOPT_VERBOSE, true);
+			    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+			    $data = curl_exec($ch);
+			    curl_close($ch);
+				 $response->_returnMessage = json_encode($data);
+			}
+		} catch (Exception $e) {
+			$response->_returnCode = ErrorCode::Failed;
+			$response->_returnMessage = $e->getMessage ();
+		}
+
+		return $response;
+	}
 	
 	 /* Get All the books in the Library
 	 * @return BookResponse
 	 */
 	function GetAllBooks($offset, $count) {
 		
-		$response = new Json\Commands\BookResponse();
+		$response = new Json\Commands\BookRespones();
 		
 		try {
 			if ($offset != null && $count != null)
